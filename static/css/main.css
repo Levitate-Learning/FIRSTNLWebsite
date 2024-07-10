@@ -1,0 +1,91 @@
+
+:root{
+    --fll-red: #ED1C24;
+    --fll-blue: #0066B3;
+    --fll-gray: #9A989A;
+    --fll-black: #231F20;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/font/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/static/font/roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/static/font/roboto/Roboto-Italic.ttf");
+    font-style: italic;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.color-fll-red {
+    color: var(--fll-red);
+}
+
+.bg-fll-red {
+    color: var(--fll-red);
+}
+
+.color-fll-blue {
+    color: var(--fll-blue);
+}
+
+.bg-fll-blue {
+    color: var(--fll-blue);
+}
+
+.color-fll-gray {
+    color: var(--fll-gray);
+}
+
+.bg-fll-gray {
+    color: var(--fll-gray);
+}
+
+.color-fll-black {
+    color: var(--fll-black);
+}
+
+.bg-fll-black {
+    color: var(--fll-black);
+}
+
+.cw::after{
+    content: '\00a9';
+    font-size: 0.7rem;
+    vertical-align: top;
+}
+
+.container-expanded{
+    width: 100vw;
+}
+
+.yt-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.yt-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.border-fll-red{
+    border-color: var(--fll-red) !important;
+}

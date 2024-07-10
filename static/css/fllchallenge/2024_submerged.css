@@ -1,0 +1,60 @@
+:root{
+    --submerged-blue: #6080A3;
+    --submerged-light-blue: #ABD8E7;
+    --submerged-dark-blue: #0083AE;
+}
+
+
+.color-submerged-blue {
+    color: var(--submerged-blue);
+}
+
+.bg-submerged-blue{
+    background-color: var(--submerged-blue);
+}
+
+.banner img{
+    max-height: 200px;
+}
+
+.timeline {
+    list-style: none;
+}
+
+.timeline li{
+    border-left: var(--submerged-dark-blue) solid 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.timeline li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: var(--submerged-dark-blue) 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.timeline li:last-child{
+    border: none;
+}
+
+.btn-icon{
+    font-size: 4rem;
+}
+
+.hover-grow{
+    transition-property: transform;
+    transition-duration: 0.15s;
+}
+
+.hover-grow:hover{
+    transform: scale(1.05);
+}

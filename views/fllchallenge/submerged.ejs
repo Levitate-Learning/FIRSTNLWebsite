@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="/static/css/fllchallenge/2024_submerged.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<div class="banner container-fluid bg-submerged-blue text-center p-5">
+    <img class="img-fluid" src="/static/img/fllchallenge/2024/fd_fll_submerged_wordmark_rgb.png" />
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <ul class="timeline">
+                <li>
+                    <h5 class="fw-bold">August 8th, 2024</h5>
+                    <h6>Competition Season Begins</h6>
+                </li>
+                <li>
+                    <h5 class="fw-bold">October 31st, 2024</h5>
+                    <h6>Registration Deadline</h6>
+                </li>
+                <li>
+                    <h5 class="fw-bold">TBD, 2024</h5>
+                    <h6>Competition Day</h6>
+                </li>
+                <li>
+                    <h5 class="fw-bold">TBD, 2024</h5>
+                    <h6>Online Competition Submission Deadline</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/4JV7x014U0I" title="2024-2025 FIRST LEGO League SUBMERGED Season Reveal Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-lg-3 row-cols-sm-2">
+        <%- include('submerged/icon_btn', {
+            icon: 'bi-cash', 
+            title: 'Team Costs and Grants', 
+            subtitle: 'Learn about the costs to start an FLL team and possible grants to help you',
+            url: ''
+        }) 
+        %>
+        <%- include('submerged/icon_btn', {
+            icon: 'bi-person-raised-hand', 
+            title: 'Volunteer', 
+            subtitle: 'Learn more about how you can volunteer at the Newfoundland & Labrador FIRST LEGO Challenge Competition',
+            url: ''
+        }) 
+        %>
+        <%- include('submerged/icon_btn', {
+            icon: 'bi-people-fill', 
+            title: 'Register a Team', 
+            subtitle: 'Learn how to start a FIRST LEGO League team and how to register',
+            url: ''
+        }) 
+        %>
+        
+    </div>
+    <div class="pt-5"></div>
+</div>
