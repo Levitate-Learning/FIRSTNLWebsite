@@ -11,7 +11,7 @@
 </div>
 
 <div class="container mt-5">
-    <link href="<$-FILE('/css/index.css')%>" rel="stylesheet"/>
+    <link href="<%-FILE('/css/index.css')%>" rel="stylesheet"/>
 
     <div class="row">
         <div class="col-md-6">
@@ -33,7 +33,7 @@
         <!--FLL-->
         <div class="col-lg-6 mb-4">
             <div class="bg-fll-red" style="min-height: 50px;"></div>
-            <div class="bg-image position-relative d-flex" style="background-image: url('/img/lg/home/DSC2716.jpg'); background-position-x: left; background-size: 150%;">
+            <div class="bg-image position-relative d-flex" style="background-image: url('<%-FILE('/img/lg/home/DSC2716.jpg')%>'); background-position-x: left; background-size: 150%;">
                 <div class="bg-overlay-gradient d-flex w-100">
                     <div class="mx-2 mx-md-5 py-3 text-center">
                         <img class="img-fluid" style="max-height: 125px" <%-IMAGE('logo/FIRSTLego_Type_White.png')%> />
@@ -52,7 +52,7 @@
         <!--FTC-->
         <div class="col-lg-6 mb-4">
             <div class="bg-ftc-orange" style="min-height: 50px;"></div>
-            <div class="bg-image position-relative d-flex" style="background-image: url('/img/lg/home/IMG_3184.jpg'); background-position-x: right; background-size: 150%;">
+            <div class="bg-image position-relative d-flex" style="background-image: url('<%-FILE('/img/lg/home/IMG_3184.jpg')%>'); background-position-x: right; background-size: 150%;">
                 <div class="bg-overlay-gradient-reverse d-flex flex-row-reverse w-100 text-end">
                     <div class="mx-2 mx-md-5 py-3 text-center">
                         <img class="img-fluid" style="max-height: 125px" <%-IMAGE("logo/FIRSTTech_Type_White.png")%> />
