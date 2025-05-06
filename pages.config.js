@@ -10,6 +10,10 @@ global.LINK = function(url){
     return "/FIRSTNLWebsite" + url + ".html"
 }
 
+global.FILE = function(url){
+    return "/FIRSTNLWebsite" + url;
+}
+
 module.exports = [
     {template: "base.ejs", output: 'index.html', data: {page: "index"}},
     {template: "base.ejs", output: "aboutus.html", data: {page: "about/about_us"}},
