@@ -1,0 +1,20 @@
+<div class="container-fluid px-0 position-relative d-flex" style="min-height: 200px;max-height: 40%;">
+    <div class="row mx-0 d-flex position-relative">
+        <!--<div class="col p-0 bg-image"  style="background-image: url('<%= image1 %>');"> -->
+        <div class="col p-0 bg-image">
+            <img class="w-100 h-100" style="object-fit: cover;" <%- IMAGE(image1) %>>
+        </div>
+        <div class="col p-0 bg-image">
+            <img class="w-100 h-100" style="object-fit: cover;" <%- IMAGE(image2) %>>
+        </div>
+        <div class="col p-0 bg-image">
+            <img class="w-100 h-100" style="object-fit: cover;" <%- IMAGE(image3) %>>
+        </div>
+    </div>
+    <div class="bg-overlay position-absolute top-0 left-0 w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="text-white text-center">
+            <h1 class="fw-bold"><%= title1 %></h1>
+            <h1 class="fw-bold"><%= title2 %></h1>
+        </div>
+    </div>
+</div>

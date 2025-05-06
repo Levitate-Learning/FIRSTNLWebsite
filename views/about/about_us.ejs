@@ -1,31 +1,55 @@
+<%- include("../components/tri_image_banner", {
+    image1: "about_us/_DSC2171.jpg", 
+    image2: "about_us/IMG_2987.jpg", 
+    image3: "about_us/_DSC2447.jpg",
+    title1: "About Us",
+    title2: ""
+})%>
+
 <div class="container mt-5">
-    <div>
-        <h1>About Us</h1>
-        <p>The following is the FIRST Robotics Newfoundland and Labrador mission, vision and values.</p>
-    </div>
-    <div class="mt-5">
-        <h2>Our Mission</h2>
-        <p>
-            To inspire students of Newfoundland and Labrador to pursue further studies and careers in the field of science, technology, engineering, and entrepreneurship. 
-            This is achieved by providing exciting mentor-based programs that build science, technology, engineering, and problem solving skills.
-            The programs we provide inspire innovation and foster well-round life capabilities such as self-confidence, communication, and leadership.
-        </p>
-    </div>
-    <div class="mt-5">
-        <h2>Our Vision</h2>
-        <p>
-            To transform Newfoundland and Labrador by creating a culture where science, technology and innovation are celebrated and where students dream of becoming science, technology, and innovation leaders and entrepreneurs.
-        </p>
-    </div>
-    <div class="mt-5">
-        <h2>Our Values</h2>
-        <p>
-            The <span class="cw">FIRST</span> core values emphasize friendly sportsmanship, respect for the contributions of others, teamwork, learning, and community involvement.
-            These are part of our commitment to fostering, cultivating, and preserving a culture of equity, diversity, and inclusion. 
-            The FIRST Community expresses the FIRST philosophies of <span class="fw-bold">Gracious Professionalism</span> and <span class="fw-bold">Coopertition</span> through our Core Values:
-        </p>
-        <div class="text-center mt-3">
-            <img class="img-fluid" src="/static/img/fllchallenge/Core_Values.png" />
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="fw-bold">About Us</h2>
+            <p>FIRST Newfoundland and Labrador is a division of Levitate Learning, a volunteer-driven, not-for-profit organization based in St. John's, Newfoundland and Labrador, Canada. We stride to provide every student in the province the opportunity to explore STEM education to discover their passions and how to pursue a STEM career.</p>
+            <p>Our volunteer base consists of many people who participated in FIRST Lego League and other robotics programs in the province. We know how impactful these programs can be and put in the work to give that opportunity to the next generation.</p>
+        
+            <h2 class="fw-bold">Our Mission</h2>
+            <p>
+                To inspire students of Newfoundland and Labrador to pursue further studies and careers in the field of science, technology, engineering, and entrepreneurship. 
+                This is achieved by providing exciting mentor-based programs that build science, technology, engineering, and problem solving skills.
+                The programs we provide inspire innovation and foster well-round life capabilities such as self-confidence, communication, and leadership.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid w-100" <%-IMAGE("about_us/IMG_0350.jpg")%> />
         </div>
     </div>
+
+    <!--
+    <div class="container mt-5">
+        <h2 class="fw-bold">Staff</h2>
+        <div class="row">
+            <%- include('person_card', {name: "TBD", title: "Executive Director", image: "about_us/no_picture.jpg"})%>
+        </div>
+    </div>
+    -->
+    <div class="container mt-5">
+        <h2 class="fw-bold">Working Board of Directors</h2>
+        <div class="row">
+            <%- include('person_card', {name: "Andrew Troake", title: "Nasdaq-Verafin Inc.", image: "about_us/no_picture.jpg"})%>
+            <%- include('person_card', {name: "Michaela Barnes", title: "Marine Institute", image: "about_us/no_picture.jpg"})%>
+            <%- include('person_card', {name: "Anthony Randell", title: "Cahill Inc.", image: "about_us/no_picture.jpg"})%>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="fw-bold">Our Volunteer Members</h2>
+        <div class="row">
+            <%- include('person_card', {name: "Sam O'Rielly", title: "", image: "about_us/no_picture.jpg"})%>
+            <%- include('person_card', {name: "David Drover", title: "Kraken Robotics", image: "about_us/no_picture.jpg"})%>
+            <%- include('person_card', {name: "Keith Sutherland", title: "Kraken Robotics", image: "about_us/no_picture.jpg"})%>
+            <%- include('person_card', {name: "Jared Hann", title: "Kraken Robotics", image: "about_us/no_picture.jpg"})%>
+        </div>
+    </div>
+    
 </div>

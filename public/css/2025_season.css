@@ -1,0 +1,22 @@
+:root{
+    --first-gold: #F7CA5F;
+    --first-copper: #C38C26;
+    --first-white: #FFFFFF;
+    --first-black: #000000;
+}
+
+.bg-first-gold{
+    background-color: var(--first-gold);
+}
+
+.bg-first-copper{
+    background-color: var(--first-copper);
+}
+
+.bg-first-black{
+    background-color: #000000;
+}
+
+.color-first-black{
+    color: #000000;
+}

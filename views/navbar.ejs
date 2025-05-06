@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
-        <img src="/static/img/FIRSTRegionHorz_NL.jpg" alt="FIRST Newfoundland & Labrador Logo" />
+        <img class="ms-3" src="/img/og/logo/firstnl_logo.svg" alt="FIRST Newfoundland & Labrador Logo" />
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item dropdown mx-2">
+            <!--<li class="nav-item dropdown mx-2">
                 <a class="nav-link dropdown-toggle href="#" id="navbarDropdownAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                 </a>
@@ -15,16 +15,31 @@
                     <a class="dropdown-item" href="/aboutus">About Us</a>
                     <a class="dropdown-item" href="/aboutus/first">About <span class="cw">FIRST</span></a>
                 </div>
+            </li>-->
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item dropdown mx-2">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPrograms" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="cw">FIRST</span> Lego League Challenge
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownFLLChallenge">
-                    <a class="dropdown-item" href="/fllchallenge/submerged">2024 Season - SUBMERGED</a>
-                    <a class="dropdown-item" href="#"></a>
-                </div>
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/aboutus">About Us</a>
             </li>
+            <!--<li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/ourhistory">Our History</a>
+            </li>-->
+            <li class="nav-item mx-3 my-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="/events" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">2025 NL FIRST CHAMPIONSHIPS</a></li>
+                    <li><a class="dropdown-item" href="">Community Events</a></li>
+                </ul>
+            </li>
+            <li class="nav-item bg-fll-red mx-3 my-2 px-4 rounded">
+                <a class="nav-link text-white fw-bold" href="/fll">FLL</a>
+            </li>
+            
+            <li class="nav-item bg-ftc-orange mx-3 my-2 px-4 rounded">
+                <a class="nav-link text-white fw-bold" href="/ftc">FTC</a>
+            </li>
+
         </ul>
     </div>
 </nav>

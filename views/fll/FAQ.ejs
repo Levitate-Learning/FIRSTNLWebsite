@@ -1,0 +1,42 @@
+<%-include("fll_nav.ejs")%>
+
+<div class="position-relative" style="height: 300px">
+    <%-include("../components/image_banner", {image: "fllchallenge/2025/2025_mat_overview.png", title: "FIRST LEGO League Challenge", subtitle: "Frequently Asked Questions"})%>
+</div>
+
+<div class="container my-5">
+    <%-include("components/faq_question", {question: "Can I change my team's name?", answer: "Yes! You can modify your team's name using the FIRST Dashboard."})%>
+    <%-include("components/faq_question", {question: "Can I bring multiple teams to the comeptition?", answer: "Yes! Teams are required to have at least 2 participants and at most 10. Reach out to first@levitatelearning.ca if you have more than 10 students as we may be able to provide kits for your additional teams. We will not be able to provide kits if you have multiple teams but less than 10 students total."})%>
+    <%-include("components/faq_question", {question: "How do I get a robot kit?", answer: "Contact us at first@levitatelearning.ca. We will work with you to get you a robot kit. We can send kits through the DRL bus, organize pickups in St. John's, and ship through Canada Post if required. As well, we work with many program specalists in NLSchools and may be able to get a kit dropped off through them."})%>
+    <%-include("components/faq_question", {question: "Can I buy additional kits for my robot?", answer: "Yes. If you are able to, you can order your own SPIKE robot kits. The only limit is that a robot may have 1 controller, 4 motors max, and may only use the touch, color, and distance sensors. Robots can be made out of as many non-electric LEGO parts from any official LEGO set."})%>
+    <div class="mb-5">
+        <%-include("components/faq_question", {question: "Can I get replacement parts?", answer: "These robot parts aren't indestructible and accidents happen. Sadly we are unable to provide replacement parts for broken motors or sensors. You can order replacements from the Canadian distributor for LEGO Spike, Spectrum."})%>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5" style="margin-top: -2rem;">
+            <div class="col text-center my-1">
+                <img class="w-100" <%-IMAGE("fllchallenge/robot/motor_large.webp")%> />
+                <p>$69.90</p>
+                <a target="_blank" href="https://spectrumed.ca/en/lego-education-spike-angular-motor-add-on-large" class="d-inline btn text-white bg-fll-red"> Large Motor <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <div class="col text-center my-1">
+                <img class="w-100" <%-IMAGE("fllchallenge/robot/motor_small.webp")%> />
+                <p>$59.90</p>
+                <a target="_blank" href="https://spectrumed.ca/en/lego-education-spike-prime-angular-motor-add-on-medium" class="d-inline btn text-white bg-fll-red"> Small Motor <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <div class="col text-center my-1">
+                <img class="w-100" <%-IMAGE("fllchallenge/robot/touch_sensor.webp")%> />
+                <p>$45.00</p>
+                <a target="_blank" href="https://spectrumed.ca/en/lego-education-spike-prime-force-sensor-add-on" class="d-inline btn text-white bg-fll-red"> Touch Sensor <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <div class="col text-center my-1">
+                <img class="w-100" <%-IMAGE("fllchallenge/robot/color_sensor.webp")%> />
+                <p>$45.00</p>
+                <a target="_blank" href="https://spectrumed.ca/en/lego-education-spike-prime-colour-sensor-add-on" class="d-inline btn text-white bg-fll-red"> Color Sensor <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <div class="col text-center my-1">
+                <img class="w-100" <%-IMAGE("fllchallenge/robot/distance_sensor.webp")%> />
+                <p>$69.90</p>
+                <a target="_blank" href="https://spectrumed.ca/en/lego-education-spike-prime-distance-sensor-add-on" class="d-inline btn text-white bg-fll-red"> Distance Sensor <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
