@@ -2,12 +2,12 @@ const ejs = require("ejs");
 
 global.IMAGE = function(img){
   return ejs.render(`
-      src = "/img/og/<%=img%>" srcset = "/img/xs/<%=img%> 50w, /img/sm/<%=img%> 200w, /img/md/<%=img%> 500w, /img/lg/<%=img%> 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+      src = "/FIRSTNLWebsite/img/og/<%=img%>" srcset = "/FIRSTNLWebsite/img/xs/<%=img%> 50w, /FIRSTNLWebsite/img/sm/<%=img%> 200w, /FIRSTNLWebsite/img/md/<%=img%> 500w, /FIRSTNLWebsite/img/lg/<%=img%> 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
     `, {img: img});
 }
 
 global.LINK = function(url){
-    return url + ".html"
+    return "/FIRSTNLWebsite" + url + ".html"
 }
 
 module.exports = [
