@@ -1,22 +1,6 @@
-<!--
-<div class="container-fluid px-0 position-relative ">
-    <div class="row mx-0 d-flex" style="min-height: 400px;">
-        <div class="col p-0 bg-image" style="background-image: url('/img/home/_DSC2318 copy.jpg');"></div>
-        <div class="col p-0 bg-image" style="background-image: url('/img/home/_DSC2762 copy.jpg');"></div>
-        <div class="col p-0 bg-image" style="background-image: url('/img/home/IMG_3190.jpg');"></div>
-    </div>
-    <div class="bg-overlay position-absolute top-0 left-0 w-100 h-100 d-flex justify-content-center align-items-center">
-        <div class="text-white text-center">
-            <h1 class="fw-bold">Newfoundland and Labrador's</h1>
-            <h1 class="fw-bold">premier robotics program!</h1>
-        </div>
-    </div>
-</div>
--->
-
 <%- include("components/tri_image_banner", {
-    image1: "home/_DSC2318.jpg", 
-    image2: "home/_DSC2762.jpg", 
+    image1: "home/DSC2318.jpg", 
+    image2: "home/DSC2762.jpg", 
     image3: "home/IMG_3190.jpg",
     title1: "Newfoundland and Labrador's",
     title2: "premier robotics program!"
@@ -27,7 +11,7 @@
 </div>
 
 <div class="container mt-5">
-    <link href="/css/index.css" rel="stylesheet"/>
+    <link href="<$-FILE('/css/index.css')%>" rel="stylesheet"/>
 
     <div class="row">
         <div class="col-md-6">
@@ -49,7 +33,7 @@
         <!--FLL-->
         <div class="col-lg-6 mb-4">
             <div class="bg-fll-red" style="min-height: 50px;"></div>
-            <div class="bg-image position-relative d-flex" style="background-image: url('/img/lg/home/_DSC2716.jpg'); background-position-x: left; background-size: 150%;">
+            <div class="bg-image position-relative d-flex" style="background-image: url('/img/lg/home/DSC2716.jpg'); background-position-x: left; background-size: 150%;">
                 <div class="bg-overlay-gradient d-flex w-100">
                     <div class="mx-2 mx-md-5 py-3 text-center">
                         <img class="img-fluid" style="max-height: 125px" <%-IMAGE('logo/FIRSTLego_Type_White.png')%> />
@@ -115,7 +99,7 @@
 
     <div class="text-center">
         <div class="sponsor-separator">Silver</div>
-        <img class="img-fluid sponsor-logo" src="<%-FILE('img/og/home/sponsor/pegnl-logo.svg')%>" />
+        <img class="img-fluid sponsor-logo" src="<%-FILE('/img/og/home/sponsor/pegnl-logo.svg')%>" />
         <img class="img-fluid sponsor-logo" <%-IMAGE("home/sponsor/bluedrop-logo.png")%> />
         <img class="img-fluid sponsor-logo" <%-IMAGE("home/sponsor/nl-hydro-logo.png")%> />
         <img class="img-fluid sponsor-logo" <%-IMAGE("home/sponsor/subc-logo.png")%> />
