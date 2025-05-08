@@ -1,0 +1,81 @@
+<%-include("ftc_nav.ejs")%>
+
+<div class="position-relative" style="height: 300px">
+    <%-include("../components/image_banner", {image: "ftc/IMG_3190.jpg", title: "FIRST Tech Challenge", subtitle: "Ages 14 to 18"})%>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Construction Resources</h1>
+    <p>Below are some resources for building and programming your robot.</p>
+    <h3>Build Guides</h3>
+    <table class="table">
+        <thead>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Link</th>
+        </thead>
+        <tbody>
+            <tr>
+                <tr>
+                    <td><img style="max-width: 200px;" src="<%-FILE("/img/og/ftc/robot_kits/edubot_v2.svg")%>" /></dr>
+                    <td>Class Bot V2</dr>
+                    <td>Here is a build guide for a robot using the REV Robotics EduKit V2 provided by FIRST Newfoundland and Labrador.</td>
+                    <td><a target="_blank" href="https://docs.revrobotics.com/duo-build/ftc-starter-kit-class-bot" class="btn text-white bg-ftc-orange"> REV Robotics Canada <i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+            </tr>
+            <tr>
+                <tr>
+                    <td><img style="max-width: 200px;" src="<%-IMAGE("/ftc/robot_kits/ftc_starter.png")%>" /></dr>
+                    <td>2025 FTC Starter Bot</dr>
+                    <td>
+                        <p>The REV Robotics starter bot is a kit designed to be built if you have the EDU Kit V2 to Starter Kit V3.1 Upgrade or the FTC Starter Bot V3.1. We do not provide all the materials to build this robot,
+                        your team may fundraise to buy the components missing to create this build. Check out the section below for some recommended optional kits.</p>
+                        <div class="alert alert-danger">
+                            The provided EduKit V2 robot does not contain all the parts required for this build guide. You will need to fundraise for additional components to complete this build.
+                        </div>
+                    </td>
+                    <td><a target="_blank" href="https://docs.revrobotics.com/duo-build/ftc-starter-kit-class-bot" class="btn text-white bg-ftc-orange"> REV Robotics Canada <i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container my-5">
+    <h1>Optional Robot Expansion</h1>
+    <p>We provide to new teams the REV Edu Kit V2. This kit will allow your team to build a robot and compete 
+        in the FTC competition. Teams may fundraise money to purchase additional components for your robot. 
+        Fundraising and budget is a component of the engineering portfolio. We recommend teams fundraise money 
+        to expand the capabilities of their robot and for team spirit through materials like team shirts.</p>
+
+    <div class="table-responsive-lg">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img style="max-width: 200px;" <%-IMAGE("ftc/robot_kits/edu_kit_to_ftc_v3.1.webp")%> /></td>
+                    <td>EDU Kit V2 to Starter Kit V3.1 Upgrade</td>
+                    <td>This kit provides your team with an aditional motors and servos alongside many mechanical components such as brackets, gears, screws, and aluminum extrusions.</td>
+                    <td>$607.50</td>
+                    <td><a target="_blank" href="https://revrobotics.ca/rev-45-2194/" class="btn text-white bg-ftc-orange"> REV Robotics Canada <i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img style="max-width: 200px;" <%-IMAGE("ftc/robot_kits/extrusion_lift_kit.webp")%> /></td>
+                    <td>15mm Extrusion Lift Kit</td>
+                    <td>This kit contains mechanical components to be able to build a 3-stage <a target="_blank" href="https://docs.revrobotics.com/duo-build/linear-motion-kit/three-stage-continuous-lift">continuous</a> or <a target="_blank" href="https://docs.revrobotics.com/duo-build/linear-motion-kit/three-stage-cascading-lift">cascading</a> lift.</td>
+                    <td>$126.50</td>
+                    <td><a target="_blank" href="https://www.revrobotics.com/rev-45-1900/" class="btn text-white bg-ftc-orange"> REV Robotics Canada <i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

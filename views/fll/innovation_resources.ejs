@@ -19,11 +19,34 @@
 </div>
 
 <div class="container my-5">
-    <h1 class="fw-bold">Getting Started</h1>
+    <h1 class="fw-bold">Project Sparks</h1>
     <p>Finding a problem to solve can sometimes be a difficult starting point. You can choose to design a solution for one of the 
         problems listed below or do some research to identify a different problem. Conduct research to explore existing solutions 
         to the problem and to determine what challenges are still faced. You may want to create something new or improve on an 
         existing solution; that's what innovation is all about.</p>
-    
-    <p class="fst-italic">List of project ideas coming soon...</p>
+
+    <%-include("components/innovation_idea", {
+        text: "During an excursion, the team discovers an ancient map leading them to believe more artifacts will be found nearby.", 
+        question: "How will the archaeology team identify where additional artifacts are located?", 
+        image: "fllchallenge/2025/ancient_map.jpg"})%>
+    <%- include("components/innovation_idea", {
+        text: "Members of the excavation team want to explore nearby caves and account for changes in the landscape that occurred over time",
+        question: "How can the team use technology to create a modern-day map of the cave and full site?",
+        image: "fllchallenge/2025/cave.webp"
+    }) %>
+    <%- include("components/innovation_idea", {
+        text: "Once excavation begins, the team starts to find artifacts related to everyday life. Some are sturdy and large, like millstones used to process grains, and others are smaller, like coins and beads. ",
+        question: "What tools can the team use to get these items out of the ground without damaging or losing any of them?",
+        image: "fllchallenge/2025/beothuk-spear-head.png"
+    }) %>
+    <%- include("components/innovation_idea", {
+        text: "The archaeologists have evidence that the people who once lived here were very connected to water and all it would provide. Parts of sculptures found near a forum depict animals from the water, but locating all the pieces and restoring them will be a significant challenge",
+        question: "How can the team improve the restoration process?",
+        image: "fllchallenge/2025/boydscove-excavation.jpg"
+    }) %>
+    <%- include("components/innovation_idea", {
+        text: "An artifact was discovered that has left everyone on the team wanting to know more, but not every mystery can be solved by one team on its own.",
+        question: "How can archaeologists work with teams in other careers to solve the mysteries together?",
+        image: "fllchallenge/2025/selma-1979-saddle-island.webp"
+    }) %>
 </div>

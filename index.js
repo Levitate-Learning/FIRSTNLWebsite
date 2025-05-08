@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
   util.renderPage(res, "index");
 })
 
+app.get("/sponsor", (req, res) => {
+  util.renderPage(res, "sponsor")
+});
+
 app.use("/fllchallenge", require("./routes/fllchallenge"));
 app.use("/aboutus", require("./routes/about"));
 app.use("/ourhistory", require("./routes/ourhistory"));

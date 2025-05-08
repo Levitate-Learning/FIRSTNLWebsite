@@ -57,10 +57,13 @@ function processImages(dir, size) {
                 processImages(dir + "/" + f, size)
             }else{
                 //console.log(file);
-                if(size === "og"){
-                    fs.copyFileSync(file, outFile);
-                }else{
-                    resize(file, sizes[size]).toFile(outFile);
+                if(!fs.existsSync(outFile)){
+                    console.log(outFile);
+                    if(size === "og"){
+                        fs.copyFileSync(file, outFile);
+                    }else{
+                        resize(file, sizes[size]).toFile(outFile);
+                    }
                 }
             }
         });
