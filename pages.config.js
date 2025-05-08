@@ -7,11 +7,13 @@ global.IMAGE = function(img){
 }
 
 global.LINK = function(url){
-    return "/FIRSTNLWebsite" + url + ".html"
+    //return "/FIRSTNLWebsite" + url + ".html"
+    return url + ".html"
 }
 
 global.FILE = function(url){
-    return "/FIRSTNLWebsite" + url;
+    //return "/FIRSTNLWebsite" + url;
+    return url;
 }
 
 module.exports = [

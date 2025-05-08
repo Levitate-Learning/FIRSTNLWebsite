@@ -12,21 +12,21 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('<%-FILE('/font/roboto/Roboto-Regular.ttf')%>') format('truetype');
+    src: url('/FIRSTNLWebsite/font/roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("<%-FILE('/font/roboto/Roboto-Bold.ttf')%>") format('truetype');
+    src: url("/FIRSTNLWebsite/font/roboto/Roboto-Bold.ttf") format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("<%-FILE('/font/roboto/Roboto-Italic.ttf')%>") format('truetype');
+    src: url("/FIRSTNLWebsite/font/roboto/Roboto-Italic.ttf") format('truetype');
     font-style: italic;
 }
 

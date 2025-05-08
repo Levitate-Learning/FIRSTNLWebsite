@@ -76,3 +76,7 @@ processImages("", "md");
 processImages("", "lg");
 processImages("", "xs");
 processImages("", "og");
+
+if(fs.existsSync("favicon.ico")){
+    fs.cpSync("favicon.ico", "public/img/favicon.ico");
+}
