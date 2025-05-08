@@ -56,7 +56,7 @@
 }
 
 .bg-fll-gray {
-    color: var(--fll-gray);
+    background-color: var(--fll-gray);
 }
 
 .color-fll-black {
@@ -153,4 +153,8 @@
 
 .fw-black{
     font-weight: bolder;
+}
+
+.w-80{
+    width: 80%;
 }
