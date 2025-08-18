@@ -1,0 +1,20 @@
+<div class="card p-2 h-100">
+    <img <%-IMAGE(img)%> />
+    <div class="card-body">
+        <h5 class="card-title fw-bold"><%=title%></h5>
+        <p>Software: <%=software%></p>
+        <p class="fst-italic"><%=description%></p>
+        <a href="<%=url%>" class="btn text-white bg-ftc-orange"><%=title%> <i class="bi bi-box-arrow-up-right"></i></a>
+        
+    </div>
+    <div class="my-2">
+        <% if(additionalLinks != null){ %>
+        <h5 class="ms-3">Additional Resources</h5>
+        <ul class="list-group list-group-flush">
+            <% additionalLinks.forEach(link => { %>
+                <li class="list-group-item"><a class="card-link" href="<%=link.url%>"><%=link.text%></a></li>
+            <% }) %>
+        </ul>
+        <% } %>
+    </div>
+</div>

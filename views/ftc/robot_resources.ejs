@@ -79,3 +79,56 @@
         </table>
     </div>
 </div>
+
+<div class="container my-5">
+    <h1>CAD Software</h1>
+    <a target="_blank" href="https://ftc-docs.firstinspires.org/en/latest/sponsors/software/software.html" class="btn text-white bg-ftc-orange my-2"> FTC Docs <i class="bi bi-box-arrow-up-right"></i></a>
+    <p>Computer Aided Design (CAD) and 3D animation software is used in FIRST Tech Challenge by teams to design and visualize complex systems prior to manufacturing.</p>
+    <p>As a benefit of being a FIRST Tech Challenge Team, some sponsors of FIRST programs have generously provided complimentary software, licenses, and/or support to teams.
+        Many of these licenses are valid for one year and must be renewed annually. Sometimes sponsored content require the use of a donation voucher provided in your FIRST Dashboard team account, 
+        sometimes sponsors merely require your Team number and contact information, and some software is simply provided free of charge with no proof of registration requirement.
+    </p>
+    
+    <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <div class="col my-2">
+            <%-include("components/cad_resource", {
+                img: "ftc/cad/autodesk.png",
+                title: "Autodesk",
+                software: "Fusion, AutoCAD, Inventor, Sythensis",
+                description: "Autodesk is dedicated to preparing the next generation of tinkerers, makers, designers, engineers, and revolutionizers to lead in the Future of Work.",
+                url: "https://www.autodesk.com/education/competitions/first",
+                additionalLinks: [
+                    {text: "Fusion Self Learning Course", url: "https://www.autodesk.com/learn/ondemand/collection/self-paced-learning-for-fusion"}
+                ]
+            })%>
+        </div>
+        <div class="col my-2">
+            <%-include("components/cad_resource", {
+                img: "ftc/cad/SolidWorks-Logo.jpg",
+                title: "Dassault Systèmes",
+                software: "SolidWorks, xDesign",
+                description: "For over 15 years, Dassault Systèmes has been a software supplier to FIRST teams with SOLIDWORKS",
+                url: "https://www.solidworks.com/product/students/free-solidworks-first-robotics-teams",
+                additionalLinks: [
+                    {text: "Solidworks FIRST Kit of Parts", url: "https://www.solidworks.com/product/students/download-first-kit-parts-frc-and-ftc"},
+                    {text: "Solidworks Online Training", url: "https://my.solidworks.com/account/student-access"}
+                ]
+            })%>
+        </div>
+        <div class="col my-2">
+            <%-include("components/cad_resource", {
+                img: "ftc/cad/2db2486ec4e220b607223acf5f79cfe5e02d7859-216x49.svg",
+                title: "PTC",
+                software: "OnShape",
+                description: "PTC is proud to join forces with FIRST to empower the engineers and innovators of tomorrow! Through PTC Education, teams can gain free software and services, including Onshape, Creo, Mathcad, Windchill, and Vuforia, easy-to-use training curriculum, and financial grants to select teams.",
+                url: "https://www.ptc.com/en/academic-program/student/first",
+                additionalLinks: [
+                    {text: "OnShape Learning Page", url: "https://learn.onshape.com/"},
+                    {text: "OnShape CAD Basics Training", url: "https://learn.onshape.com/learning-paths/introduction-to-cad"},
+                    {text: "OnShape Fundamentals Training", url: "https://learn.onshape.com/learn/learning-path/onshape-fundamentals-cad"}
+                ]
+            })%>
+        </div>
+    </div>
+
+</div>

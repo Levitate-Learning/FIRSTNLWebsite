@@ -10,4 +10,8 @@ router.get("/robot", (req, res) => {
     util.renderPage(res, "ftc/robot_resources")
 });
 
+router.get("/coding", (req, res) => {
+    util.renderPage(res, "ftc/programming_resources")
+});
+
 module.exports = router;

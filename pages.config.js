@@ -1,6 +1,10 @@
 const ejs = require("ejs");
 
 global.IMAGE = function(img){
+    if(String(img).endsWith(".svg")){
+        return ejs.render(`src = "/img/og/<%=img%>"`, {img: img})
+    }
+
   return ejs.render(`
       src = "/img/og/<%=img%>" srcset = "/img/xs/<%=img%> 50w, /img/sm/<%=img%> 200w, /img/md/<%=img%> 500w, /img/lg/<%=img%> 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
     `, {img: img});
@@ -28,5 +32,6 @@ module.exports = [
     {template: "base.ejs", output: "fll/archive/2023.html", data: {page: "fll/archive/masterpiece"}},
     {template: "base.ejs", output: "ftc.html", data: {page: "ftc/ftc"}},
     {template: "base.ejs", output: "ftc/robot.html", data: {page: "ftc/robot_resources"}},
+    {template: "base.ejs", output: "ftc/coding.html", data: {page: "ftc/robot_resources"}},
     {template: "base.ejs", output: "sponsor.html", data: {page: "sponsor"}}
 ]

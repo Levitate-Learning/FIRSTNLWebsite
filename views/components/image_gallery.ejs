@@ -1,0 +1,24 @@
+<!-- {id <text>, page <list>: {image <text>, caption <text>}   } -->
+
+<div class="w-100" id="<%=id%>">
+    <link rel="stylesheet" href="<%-FILE('css/baguetteBox.min.css')%>"/>
+    <script src="<%-FILE('js/baguetteBox.min.js')%>"></script>
+    <script>
+        window.addEventListener('load', function() {
+            baguetteBox.run("#<%=id%>");
+        });
+    </script>
+    
+    <div class="row">
+        <%pages.forEach((page, i) => {%>
+            <div class="col col-lg-2 my-2">
+                <a href="<%-FILE('img/og/' + page.image)%>"
+                    data-at-400="<%-FILE('img/sm/' + page.image)%>"
+                    data-at-800="<%-FILE('img/md/' + page.image)%>"
+                    data-at-1500="<%-FILE('img/lg/' + page.image)%>">
+                    <img class="w-100" src="<%-FILE('img/sm/' + page.image)%>"/>
+                </a>
+            </div>
+        <%})%>
+    </div>
+</div>
