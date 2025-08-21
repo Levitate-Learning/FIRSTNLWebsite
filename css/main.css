@@ -48,7 +48,7 @@
 }
 
 .bg-fll-blue {
-    color: var(--fll-blue);
+    background-color: var(--fll-blue);
 }
 
 .color-fll-gray {
