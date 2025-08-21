@@ -6,6 +6,10 @@ router.get("/", (req, res) => {
     util.renderPage(res, "ftc/ftc");
 });
 
+router.get("/startateam", (req, res) => {
+    util.renderPage(res, "ftc/start_a_team");
+});
+
 router.get("/robot", (req, res) => {
     util.renderPage(res, "ftc/robot_resources")
 });
