@@ -31,7 +31,7 @@ module.exports = [
     {template: "base.ejs", output: "fll/archive/2024.html", data: {page: "fll/archive/submerged"}},
     {template: "base.ejs", output: "fll/archive/2023.html", data: {page: "fll/archive/masterpiece"}},
     {template: "base.ejs", output: "ftc.html", data: {page: "ftc/ftc"}},
-    {template: "base.ejs", output: "ftc/startateam.html", data: {page: "ftc/startateam"}},
+    {template: "base.ejs", output: "ftc/startateam.html", data: {page: "ftc/start_a_team"}},
     {template: "base.ejs", output: "ftc/robot.html", data: {page: "ftc/robot_resources"}},
     {template: "base.ejs", output: "ftc/coding.html", data: {page: "ftc/robot_resources"}},
     {template: "base.ejs", output: "sponsor.html", data: {page: "sponsor"}}
