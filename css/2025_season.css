@@ -6,7 +6,7 @@
 }
 
 .bg-first-gold{
-    background-color: var(--first-gold);
+    background-color: var(--first-gold) !important;
 }
 
 .bg-first-copper{
@@ -14,7 +14,7 @@
 }
 
 .bg-first-black{
-    background-color: #000000;
+    background-color: #000000 !important;
 }
 
 .color-first-black{
