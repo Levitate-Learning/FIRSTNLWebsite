@@ -40,7 +40,7 @@
 }
 
 .bg-fll-red {
-    background-color: var(--fll-red);
+    background-color: var(--fll-red) !important;
 }
 
 .color-fll-blue {
@@ -48,7 +48,7 @@
 }
 
 .bg-fll-blue {
-    background-color: var(--fll-blue);
+    background-color: var(--fll-blue) !important;
 }
 
 .color-fll-gray {
@@ -56,7 +56,7 @@
 }
 
 .bg-fll-gray {
-    background-color: var(--fll-gray);
+    background-color: var(--fll-gray) !important;
 }
 
 .color-fll-black {
@@ -64,7 +64,7 @@
 }
 
 .bg-fll-black {
-    background-color: var(--fll-black);
+    background-color: var(--fll-black) !important;
 }
 
 .color-ftc-orange {
@@ -72,7 +72,7 @@
 }
 
 .bg-ftc-orange {
-    background-color: var(--ftc-orange);
+    background-color: var(--ftc-orange) !important;
 }
 
 .color-first-secondary {
@@ -80,7 +80,7 @@
 }
 
 .bg-first-secondary {
-    background-color: var(--first-secondary);
+    background-color: var(--first-secondary) !important;
 }
 
 .color-first-blue {
@@ -88,11 +88,11 @@
 }
 
 .bg-first-blue {
-    background-color: var(--first-blue);
+    background-color: var(--first-blue) !important;
 }
 
 .bg-ftc-black{
-    background-color: var(--ftc-black);
+    background-color: var(--ftc-black) !important;
 }
 
 .cw::after{
@@ -157,4 +157,13 @@
 
 .w-80{
     width: 80%;
+}
+
+.btn {
+    transition: opacity;
+    transition-duration: 0.2s;
+}
+
+.btn:hover{
+    opacity: 80%;
 }
