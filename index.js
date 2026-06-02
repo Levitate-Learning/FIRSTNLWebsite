@@ -40,6 +40,7 @@ app.use("/aboutus", require("./routes/about"));
 app.use("/ourhistory", require("./routes/ourhistory"));
 app.use("/fll", require("./routes/fll"));
 app.use("/ftc", require("./routes/ftc"));
+app.use("/events", require("./routes/events"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

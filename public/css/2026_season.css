@@ -1,0 +1,31 @@
+:root{
+    --canopy-dark-teal: #003947;
+    --canopy-olive-green: #A1A470;
+    --canopy-eathy-red: #B97064;
+    --canopy-slate-blue: #7F92A5;
+    --canopy-warm-sand: #ebdab7;
+    --canopy-black: #000000;
+    --bioglow-light-green: #C6DE94;
+    --bioglow-green: #70A334;
+    --bioglow-dark-green: #2C5535;
+    --bioglow-yellow: #F0E973;
+    --biobuzz-light-yellow: #EEE9A5;
+    --biobuzz-yellow: #f7e326;
+    --biobuzz-dark-yellow: #BBA13E; 
+}
+
+.bg-first-canopy{
+    background-color: var(--canopy-dark-teal) !important;
+    background-image: url("/img/lg/first_canopy/first_canopy_background.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-dark-teal {
+    background-color: var(--canopy-dark-teal) !important;
+}
+
+.bg-warm-sand {
+    background-color: var(--canopy-warm-sand) !important;
+}

@@ -1,10 +1,14 @@
-<%- include("components/tri_image_banner", {
-    image1: "home/DSC2318.jpg", 
-    image2: "home/DSC2762.jpg", 
-    image3: "home/IMG_3190.jpg",
-    title1: "Newfoundland and Labrador's",
-    title2: "premier robotics program!"
-})%>
+<div class="position-relative">
+    <%- include("components/tri_image_banner", {
+        image1: "home/DSC2318.jpg", 
+        image2: "home/DSC2762.jpg", 
+        image3: "home/IMG_3190.jpg",
+        title1: "Newfoundland and Labrador's",
+        title2: "premier robotics program!"
+    })%>
+    <img class="top-banner-popout z-2" style="left: 5%;" <%-IMAGE("home/students1.png")%>>
+    <img class="top-banner-popout z-2" style="right: 5%;" <%-IMAGE("home/students2.png")%>>
+</div>
 
 <div class="container-fluid px-0">
     <%- include("components/season_banner") %>
