@@ -3,7 +3,7 @@
 <%-include("fll_nav.ejs")%>
 
 <div class="position-relative" style="height: 300px">
-    <%-include("../components/image_banner", {image: "fllchallenge/2025/2025_mat_overview.png", title: "FIRST LEGO League Challenge", subtitle: "Ages 9 to 14"})%>
+    <%-include("../components/image_banner", {image: "fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg", title: "FIRST LEGO League Challenge", subtitle: "Ages 9 to 14"})%>
 </div>
 
 <div class="container mt-5">
@@ -12,7 +12,7 @@
             <p>FIRST<sup>&copy</sup> LEGO<sup>&copy</sup> League introduces STEM (science, technology, engineering, and math) to children ages 9-14 (varies by region) through fun, exciting hands-on learning. 
                 Participants gain real-world problem-solving experiences through a guided, global robotics program using LEGO® technology, helping today’s students, families, and educators build a better future together.</p>
             <p>In Newfoundland and Labrador, we host the annual provincial championships. Students from across the province come together to showcase their creations and ingenuity. The competition is open to schools and community groups in Newfoundland and Labrador.</p>
-            <button class="btn bg-fll-red text-white">START A TEAM</button>
+            <a class="btn bg-fll-red text-white"  target="_blank"  href="https://docs.google.com/forms/d/e/1FAIpQLScZ4r3OSeszvwDehf_r3l4VyUgO6h5mtvj6Ebwrd3l0Rv4NWQ/viewform?usp=dialog">START A TEAM</a>
         </div>
         <div class="col-md-6">
             <div class="yt-container">
@@ -32,7 +32,8 @@
                 image: "fllchallenge/spike_robot.png",
                 text: "Build and program a LEGO Robot to complete tasks on the robot game table. The mission changes each year based on new and exciting themes!",
                 html: `
-                    <button class='btn bg-fll-red'>Test</button>
+                    <button class='btn bg-fll-red text-white my-1' disabled>Robot Game Rulebook (Coming Soon)</button>
+                    <button class='btn bg-fll-red text-white my-1' disabled>Mission Overview Video (Coming Soon)</button>
                 `
             })%>
         </div>
@@ -43,7 +44,8 @@
                 image: "fllchallenge/robot_design_students.png",
                 text: "Your team will do a 5 minute presentation showcasing the design of your robot and your teamwork to make it!",
                 html: `
-                    <button class='btn bg-fll-red'>Test</button>
+                    <a target="_blank" class='btn bg-fll-red text-white my-1' href="https://firstinspires.blob.core.windows.net/fll/challenge/2025-26/fll-challenge-unearthed-rubrics-color.pdf">Judging Rubrics</a>
+                    <a target="_blank" class="btn bg-fll-red text-white my-1" disabled>Robot Design Resources</a>
                 `
             })%>
         </div>
@@ -54,7 +56,8 @@
                 image: "fllchallenge/innovation_project_students.png",
                 text: "Research a real world problem relating to the season theme. Design a solution to the problem. Create a model or diagram of your solution. Present your solution to a panel of judges",
                 html: `
-                    <button class='btn bg-fll-red'>Test</button>
+                    <a target="_blank" class='btn bg-fll-red text-white my-1' href="https://firstinspires.blob.core.windows.net/fll/challenge/2025-26/fll-challenge-unearthed-rubrics-color.pdf">Judging Rubrics</a>
+                    <a class="btn bg-fll-red text-white my-1" href="${LINK('/fll/innovation')}">Innovation Resources</a>
                 `
             })%>
         </div>
