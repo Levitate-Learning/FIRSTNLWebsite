@@ -32,7 +32,11 @@ app.get('/', (req, res) => {
 })
 
 app.get("/sponsor", (req, res) => {
-  util.renderPage(res, "sponsor")
+  util.renderPage(res, "sponsor");
+});
+
+app.get("/volunteer", (req, res) => {
+  util.renderPage(res, "volunteer");
 });
 
 app.use("/fllchallenge", require("./routes/fllchallenge"));

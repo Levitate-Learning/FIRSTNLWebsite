@@ -1,0 +1,164 @@
+<link rel="stylesheet" href="<%-FILE('/css/volunteer.css')%>">
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Help us inspire the next generation of innovators and leaders!</h1>
+            <p>FIRST is more than just a competition, it's a community! FIRST competitions and events are not possible without the amazing help from our volunteers. 
+                You can help us inspire students through innovation, inclusion, team work, and fun! From a few hours to events all year long, every role helps students 
+                grow, learn, and thrive.</p>
+            <p class="color-fll-red fst-italic">Volunteer signup has not opened for the 2026 Provincial Championship yet.</p>
+            <button class="btn bg-first-blue fw-bold text-white my-4" disabled>Sign Up</button>
+            <a class="btn bg-first-blue fw-bold text-white my-4" href="#roles">Explore Volunteer Roles</a>
+            
+        </div>
+        <div class="col-md-6">
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/qkOphaV17UM?si=UyC3o82Z2mV0JhcK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 text-center  mb-4">
+            <img class="w-80" <%-IMAGE('volunteer/55163195677_5fb1c04e9d_k.jpg')%>/>
+        </div>
+        <div class="col-md-6">
+            <h1>Confidently Inspire the Next Generation</h1>
+            <p>We want all FIRST volunteers to feel confident in their roles. From judging to safety goggles and registration to field resets. 
+                We offer a variety of guidebooks and interactive training modules to help volunteers feel prepared for any role. </p>
+            <button class="btn bg-first-blue text-white fw-bold" disabled>Volunteer Handbook</button>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h1>Creating a Safe, Supportive Experience</h1>
+            <p>FIRST is committed to providing a safe, welcoming environment for every student. Through our Youth Protection Program, coaches, mentors, and volunteers are trained to support our robotics programs with high standards of care and respect.</p>
+            <a class="btn bg-first-blue fw-bold text-white" target="_blank" href="https://www.firstinspires.org/programs/youth-protection-program">Learn More</a>
+        </div>
+        <div class="col-md-6 text-center">
+            <img class="w-80" <%-IMAGE('volunteer/DSC2491.jpg')%>/>
+        </div>
+    </div>
+</div>
+
+<div id="roles" class="container-fluid bg-volutneer-roles position-relative p-0">
+    <div class="bg-overlay position-absolute top-0 left-0 w-100 h-100 z-1"></div>
+    <div class="container text-white fw-bold z-2 position-relative py-5 text-center">
+        <h1 class="my-5">A Role for Everyone</h1>
+        <p class="mb-5">Whether you want to spend your time learning firsthand from our teams, helping plan and organize the event, or want to be right where the action is on the playing field, there is a role for you! Every role is critical to providing life changing experiences for youth in Newfoundland and Labrador. Learn more about the volunteer roles below.</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row position-relative">
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Judge", 
+            text: "As a judge, you'll play a key role in recognizing and celebrating team achievements by engaging directly with students through interviews and presentations. offering encouragement and constructive feedback along the way.",
+            meet: true,
+            field: false,
+            event: false}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Referee", 
+            text: "Referees observe matches and help foster fair gameplay. They identify and ‘call’ rule violations and assist competitors in understanding the rules of the game. This position requires additional training and intimate knowledge of game rules.",
+            meet: true,
+            field: true,
+            event: false}) %>
+        
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Emcee", 
+            text: "Bring the energy and spirit of FIRST to life as an Emcee, the enthusiastic voice that guides the audience through match play and team introductions. If you enjoy public speaking, connecting with teams, and creating a fun, inclusive atmosphere, this high-profile, fast-paced role is a perfect fit!",
+            meet: false,
+            field: true,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "ftc", 
+            title: "Robot Inspector", 
+            text: "Robot Inspectors perform mandatory pre-match inspections and provide teams with guidance to ensure compliance with current season robot rules. They work under the supervision of the Lead Robot Inspector and use official checklists to determine pass/fail status.",
+            meet: true,
+            field: false,
+            event: false}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Pit Admin", 
+            text: "Pit Admin is a central point of contact for teams and guests in the Pit Area. In this role you will help teams understand the schedule, ensure teams know where to go, and direct teams to various competition officials to answer questions and get necessary support.",
+            meet: false,
+            field: false,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Practice Area Supervisor", 
+            text: "A Practice Field Supervisor plays an important role in helping teams prepare for competition by managing access to the practice field area, ensuring safety, and supporting fair and efficient field use.",
+            meet: true,
+            field: true,
+            event: false}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Quiet Room Attendant", 
+            text: "The Quiet Room is a place for individuals to step away from the excitement and pressure of a FIRST event to decompress in silence. The Quiet Room Supervisor oversees the Quiet Room and helps to ensure that individuals using the room respect the nature of the space.",
+            meet: false,
+            field: false,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Event Registration", 
+            text: 'Team Registration volunteers help check in teams at the beginning of the event and provide them with information and materials for the day. After the registration period has closed, the “registration desk” turns into the “information desk”.',
+            meet: false,
+            field: false,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Scorekeeper", 
+            text: "Scorekeepers operate the scoring software used during the event and are responsible for managing match data, rankings, and results displays. In this role accuracy, focus, and comfort with computers are essential.",
+            meet: false,
+            field: true,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Volunteer Room Supervisor", 
+            text: "The Volunteer Room Assistant assists the Volunteer Coordinator with volunteer check in and monitors the volunteer room. This role is perfect for friendly, detail-oriented individuals who enjoy being part of a team and making others feel appreciated and informed.",
+            meet: false,
+            field: false,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Audio/Video Crew", 
+            text: "Be part of the action as Audio Visual Crew, where you'll help capture the excitement of a FIRST event through sound, lighting, video, and livestream support. This hands-on role is perfect for detail-oriented volunteers who enjoy tech, teamwork, and creating engaging experiences for both live and online audiences.",
+            meet: false,
+            field: false,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Photographer", 
+            text: "The Event Photographer captures the excitement and spirit of FIRST events by photographing teams, robots, volunteers, and key moments. This creative and collaborative role helps tell the story of the event through digital images.",
+            meet: false,
+            field: true,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Field Resetter", 
+            text: "Field Resetters help keep the pace of match play by quickly and safely resetting the field after each match. They are essential to the flow of the event, working closely with the field team to ensure a consistent and safe competition environment.",
+            meet: false,
+            field: true,
+            event: false}) %>
+    </div>
+</div>

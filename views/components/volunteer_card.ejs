@@ -1,0 +1,28 @@
+<div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            <%if(program == "fll") {%>
+                <p class="color-fll-red fw-bold">FIRST Lego League</p>
+            <%}else if(program == "ftc") {%>
+                <p class="color-ftc-orange fw-bold">FIRST Tech Challenge</p>
+            <% }else{ %>
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            <% } %>
+
+            <h3 class="fw-bold"><%=title%></h3>
+            <p><%=text%></p>
+
+            <%if(meet == true){%>
+                <span class="badge bg-ftc-black">Meet the Teams</span>
+            <%}%>
+            
+            <% if(field == true){ %>
+                <span class="badge bg-ftc-black">Around the Field</span>
+            <% } %>
+            
+            <% if(event == true){ %>
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            <% } %>
+        </div>
+    </div>
+</div>
