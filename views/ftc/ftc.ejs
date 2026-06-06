@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="<%-FILE('/css/ftc_index.css')%>">
+
 <%-include("ftc_nav.ejs")%>
 
 <div class="position-relative" style="height: 300px">
-    <%-include("../components/image_banner", {image: "ftc/IMG_3190.jpg", title: "FIRST Tech Challenge", subtitle: "Ages 14 to 18"})%>
+    <%-include("../components/image_banner", {image: "ftc/2026/55282148352_b60645fe4f_k.jpg", title: "FIRST Tech Challenge", subtitle: "Ages 12 to 18"})%>
 </div>
 
 <div class="container my-5">
@@ -16,116 +18,114 @@
                 required to develop strategy and build robots based on sound engineering principles, such as rapid 
                 prototyping. Awards are earned for the competition, as well as team's community outreach, robot design, 
                 and other real-world accomplishments.</p>
+            <a class="btn bg-ftc-orange fw-bold" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScUXuZ8jh7aGsGCltLhjOpcOyzBcZoKLDS3cwsuy0WxgxhNzQ/viewform?usp=header">Start a Team</a>
+            <a class="btn bg-ftc-black text-white fw-bold" href="https://ftc-resources.firstinspires.org/ftc/game">Season Materials <i class="bi bi-box-arrow-up-right"></i></a>
+            <button class="btn bg-ftc-black text-white" target="_blank" disabled>Competition Manual (Coming Soon)</button>
         </div>
         <div class="col-md-6">
             <div class="yt-container">
-                <iframe src="https://www.youtube.com/embed/-exSmCcoY1E" title="What is FIRST Tech Challenge?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Av0PgzmQXs0?si=MhJh832eYX5mnR5a" title="What is FIRST Tech Challenge?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container my-5">
-    <h1 class="fw-bold">FIRST Tech Challenge Requirements</h1>
-    <%-include("components/comp_requirement_bar", {title: "CORE VALUES", text: "Demonstrate FIRST<sup>&copy</sup> <b>Core Values</b> in everything you do. Your team will be evaluated during the robot game and the judging session. Show how your team is inclusive and works together to solve issues. Celebrate by having fun in everything you do!"})%>
-    <%-include("components/comp_requirement_bar", {title: "ROBOT GAME", text: "Use your robot to score as much points as possible in fast paced 2v2 matches."})%>
-    <%-include("components/comp_requirement_bar", {title: "ENGINEERING PORTFOLIO", text: "Create a notebook that showcases your team members and coaches, engineering design process, community outreach and engagement, and budget."})%>
-    <%-include("components/comp_requirement_bar", {title: "TEAM INTERVIEW", text: "Your team will prepare a short presentation on your robot design and team organization."})%>
+<div class="container mt-5">
+    <h1 class="fw-bold mb-5">The Challenge</h1>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-column justify-content-end" style="margin-top: 160px;">
+            <%-include("components/comp_requirement_card", 
+                {title: "The Robot Game", 
+                number: "1",
+                image: "ftc/2026/7.png",
+                text: "Design, build, and program a robot to compete in fast pased 2v2 matches. The Robot game consists of a autonomous and teleoperated period.",
+                html: `
+                    <button class='btn bg-ftc-black text-white fw-bold my-1' disabled>Competition Manual (Coming Soon)</button>
+                    <button class='btn bg-ftc-black text-white fw-bold my-1' disabled>Robot Game Overview Video (Coming Soon)</button>
+                `
+            })%>
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-end" style="margin-top: 160px;">
+            <%-include("components/comp_requirement_card", 
+                {title: "Judging", 
+                number: "2",
+                image: "ftc/2026/8.png",
+                text: "Prepare a 5 minute presentation about your team and your robot. Participate in multiple Q&A team interviews.",
+                html: `
+                    <a target="_blank" class='btn bg-ftc-black text-white fw-bold my-1' href="https://ftc-resources.firstinspires.org/ftc/event/interview-feedback">Interview Feedback Form <i class="bi bi-box-arrow-up-right"></i></a>
+                    <a target="_blank" class="btn bg-ftc-black text-white fw-bold my-1" href="https://ftc-resources.firstinspires.org/ftc/archive/2026/event/award-summary">Judging Summary Sheet <i class="bi bi-box-arrow-up-right"></i></a>
+                `
+            })%>
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-end" style="margin-top: 160px;">
+            <%-include("components/comp_requirement_card", 
+                {title: "Engineering Portfolio", 
+                number: "3",
+                image: "ftc/2026/6.png",
+                text: "Prepare a short document outlining your robot's design, control, and innovation; alongside your team's sustainability and outreach.",
+                html: `
+                    <a target="_blank" class="btn bg-ftc-black text-white fw-bold my-1" href="https://ftc-resources.firstinspires.org/ftc/archive/2026/event/award-summary">Judging Summary Sheet <i class="bi bi-box-arrow-up-right"></i></a>
+                `
+            })%>
+        </div>
+    </div>
 </div>
 
 <div class="container my-5">
     <h1 class="fw-bold">Costs and Funding</h1>
-    <p>Our goal is to give every student in the province the opportunity to participate in STEM education. 
-        Cost is a major barrier for students across the province and we are committed to reducing costs and 
-        providing new and existing teams the resources they need to participate. </p>
-    <p>Every team in the province is required to pay a registration fee of $150 CAD. After paying this registration, 
-        Levitate Learning will provide you all the resources required for your team to participate in FIRST Tech Challenge 
-        in the province. See below for what you will be provided.</p>
+    <div class="row">
+        <div class="col-lg-7 col-md-6">
+            <p>Our goal is to give every student in the province the opportunity to participate in STEM education. Cost is a major barrier for students across 
+                the province and we are committed to reducing costs and providing new and existing teams the resources they need to participate. </p>
+            <p>Every team in the province is required to pay a registration fee of $300 CAD. After paying this registration, we will provide you all the resources required for your team to participate in FIRST Tech Challenge.</p>
+        </div>
+        <div class="col-lg-5 col-md-6 px-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <p class="fw-bold fs-5 my-0">Cost</p>
+                        <p class="fw-bold my-0" style="font-size: 68px;">$300</p>
+                        <p class="fst-italic" style="margin-top: -17px;">HST Included</p>
+                    </div>
+                    <hr/>
+                    <p class="fs-4 fw-bold">Your Team Receives:</p>
+                    <ul class="cost-list px-4">
+                        <li>Participation at the FIRST Provincial Championship</li>
+                        <li>FTC Starter Kit + Control Bundle*</li>
+                        <li>FTC BIOBUZZ Practice Materials**</li>
+                        <li>Travel Stipend***</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Value</th>
-                <th scope="col">Cost</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Newfoundland and Labrador Registration</td>
-                <td>$150 CAD</td>
-                <td class="fw-bold">$150 CAD + HST</td>
-            </tr>
-            <tr>
-                <td>FIRST Global Registration Fee</td>
-                <td>$295 USD</td>
-                <td>
-                    <p class="fw-bold">$0 CAD</p>
-                    <p>(Covered by us)</p>
-                </td>
-            </tr>
-            <tr>
-                <td>REV FTC Starter Kit v3.1 + Control</td>
-                <td>$1750 CAD</td>
-                <td>
-                    <p class="fw-bold">$0 CAD</p>
-                    <p>(Provided to new teams for free)</p>
-                </td>
-            </tr>
-            <tr>
-                <td>*Competition Pieces</td>
-                <td>$370 CAD</td>
-                <td>
-                    <p class="fw-bold">$0 CAD</p>
-                    <p>(Provided to all teams for free)</p>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Total Cost:</td>
-                <td>
-                    <p class="fw-bold">$172.50 CAD</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="fst-italic text-center">*We can provide your team some pieces to practice with but not a full competition set.</p>
+    <div class="mt-4">
+        <h2>Provided Travel Stipends for Teams</h2>
+        <p>With your registration fee paid, you're team gets the opportunity to participate in the Newfoundland and Labrador Championship competition in St. John’s. We recognize that travel is another barrier for students to participate in programs like this. For teams that require overnight travel to participate, your registration fee will also unlock travel stipends to support getting to the competition.</p>
 
-    <p class="my-5">With your registration fee paid, your team gets the opportunity to participate in the Newfoundland and Labrador Championship competition in St. John's. We recognize that travel is another barrier for students to participate in programs like this. For teams that require overnight travel to participate, your registration fee will also unlock travel stipends to support getting to the competition.</p>
-    <h2>Provided Travel Stipend for Teams</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Distance From St. John's</th>
-                <th scope="col">>100km</th>
-                <th scope="col">>250km</th>
-                <th scope="col">>500km</th>
-                <th scope="col">Labrador</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Accomodations</th>
-                <td>$700 CAD</td>
-                <td>$700 CAD</td>
-                <td>$700 CAD</td>
-                <td>$700 CAD</td>
-            </tr>
-            <tr>
-                <th scope="row">Transportation</th>
-                <td>$200 CAD</td>
-                <td>$400 CAD</td>
-                <td>$600 CAD</td>
-                <td>*$800 CAD per flight ticket</td>
-            </tr>
-            <tr>
-                <th scope="row">Total</th>
-                <td>$900 CAD</td>
-                <td>$1100 CAD</td>
-                <td>$1300 CAD</td>
-                <td>*$700 CAD + flight allowance</td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="fst-italic">*depending on team size, we may not be able to accommodate all flight tickets. We will do our best to provide funding for as many students and coaches as possible.</p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Driving >100km</th>
+                        <th scope="col">Driving >250km</th>
+                        <th scope="col">Driving >500km</th>
+                        <th scope="col">Driving >800km</th>
+                        <th scope="col">Flying From Labrador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$75 per participant (up to $750)</td>
+                        <td>$125 per participant (up to $1250)</td>
+                        <td>$150 per participant (up to $1500)</td>
+                        <td>$200 per participant (up to $2000)</td>
+                        <td>$800 per participant*</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="fst-italic">*depending on team size, we may not be able to accommodate all flight tickets. We will do our best to provide funding for as many students and coaches as possible.</p>
+    </div>
 </div>
