@@ -35,5 +35,6 @@ module.exports = [
     {template: "base.ejs", output: "ftc/robot.html", data: {page: "ftc/robot_resources"}},
     {template: "base.ejs", output: "ftc/coding.html", data: {page: "ftc/programming_resources"}},
     {template: "base.ejs", output: "sponsor.html", data: {page: "sponsor"}},
-    {template: "base.ejs", output: "volunteer.html", data: {page: "volunteer"}}
+    {template: "base.ejs", output: "volunteer.html", data: {page: "volunteer"}},
+    {template: "base.ejs", output: "events/championship.html", data: {page: "events/provincial_championship"}}
 ]
