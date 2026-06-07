@@ -1,0 +1,13 @@
+.bg-championship-stats{
+    background-color: var(--canopy-dark-teal);
+    background-image: url("/img/lg/events/55166421879_99e056d9e9_6k.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.attendance-stat{
+    font-size: 64px;
+    margin-bottom: 0;
+    font-weight: bold;
+}

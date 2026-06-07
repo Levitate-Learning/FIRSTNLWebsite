@@ -1,0 +1,9 @@
+.cost-list li::before{
+    color: var(--ftc-orange);
+    font-size: 25px;
+    content: '\2714';
+}
+
+.cost-list {
+    list-style: none;
+}
