@@ -1,4 +1,5 @@
 const ejs = require("ejs");
+const teamresource = require("./teamresource")
 
 global.IMAGE = function(img){
     if(String(img).endsWith(".svg")){
@@ -20,14 +21,19 @@ global.FILE = function(url){
     return url;
 }
 
+global.teamresources = {};
+global.teamresources.fll = teamresource.loadCSV("csv/fll.csv");
+
+
 module.exports = [
     {template: "base.ejs", output: 'index.html', data: {page: "index"}},
     {template: "base.ejs", output: "aboutus.html", data: {page: "about/about_us"}},
     {template: "base.ejs", output: "fll.html", data: {page: "fll/fll"}},
     {template: "base.ejs", output: "fll/startateam.html", data: {page: "fll/start_a_team"}},
-    {template: "base.ejs", output: "fll/innovation.html", data: {page: "fll/innovation_resources"}},
+    //{template: "base.ejs", output: "fll/innovation.html", data: {page: "fll/innovation_resources"}},
     {template: "base.ejs", output: "fll/faq.html", data: {page: "fll/FAQ"}},
-    {template: "base.ejs", output: "fll/coding.html", data: {page: "fll/coding_resources"}},
+    //{template: "base.ejs", output: "fll/coding.html", data: {page: "fll/coding_resources"}},
+    {template: "base.ejs", output: "fll/teamresources.html", data: {page: "fll/team_resources"}},
     {template: "base.ejs", output: "fll/archive/2024.html", data: {page: "fll/archive/submerged"}},
     {template: "base.ejs", output: "fll/archive/2023.html", data: {page: "fll/archive/masterpiece"}},
     {template: "base.ejs", output: "ftc.html", data: {page: "ftc/ftc"}},

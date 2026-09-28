@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 const util = require("./routes/util");
 const ejs = require("ejs");
+const teamresource = require('./teamresource');
 
 
 global.IMAGE = function(img){
@@ -22,6 +23,9 @@ global.LINK = function(url){
 global.FILE = function(url){
   return url;
 }
+
+global.teamresources = {};
+global.teamresources.fll = teamresource.loadCSV("csv/fll.csv");
 
 
 app.use(express.static('public'));

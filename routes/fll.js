@@ -23,6 +23,10 @@ router.get("/coding", (req, res) => {
     util.renderPage(res, "fll/coding_resources")
 });
 
+router.get("/teamresources", (req, res) => {
+    util.renderPage(res, "fll/team_resources");
+});
+
 router.get("/archive/2024", (req, res) => {
     util.renderPage(res, "fll/archive/submerged");
 });

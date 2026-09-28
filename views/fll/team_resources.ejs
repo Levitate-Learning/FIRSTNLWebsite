@@ -1,0 +1,44 @@
+<%-include("fll_nav.ejs")%>
+
+<div class="position-relative" style="height: 300px">
+    <%-include("../components/image_banner", {image: "fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg", title: "FIRST LEGO League Challenge", subtitle: "Ages 9 to 14"})%>
+</div>
+
+<div class="container my-5">
+    <h1>Team Resources</h1>
+</div>
+
+<div class="container my-5">
+    <h1>Coaches Corner</h1>
+    <%-include("components/resources_accordion", {id: "coach", category: "Coaches Corner", resources: global.teamresources.fll})%>
+</div>
+
+<div class="container my-5">
+    <h1>Important Season Information</h1>
+    <%-include("components/resources_accordion", {id: "season", category: "Important Season Information", resources: global.teamresources.fll})%>
+</div>
+
+<div class="container my-5">
+    <h1>Event Information</h1>
+    <%-include("components/resources_accordion", {id: "event", category: "Event Information", resources: global.teamresources.fll})%>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Building/Programming Resources</h1>
+    <%-include("components/resources_accordion", {id: "robot", category: "Robot Building/Programming Resources", resources: global.teamresources.fll})%>
+</div>
+
+<div class="container my-5">
+    <h1>Innovation Project Resources</h1>
+    <%-include("components/resources_accordion", {id: "inno", category: "Innovation Project Resources", resources: global.teamresources.fll})%>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Design Presentation Resources</h1>
+    <%-include("components/resources_accordion", {id: "robodesign", category: "Robot Design Presentation Resources", resources: global.teamresources.fll})%>
+</div>
+
+<div class="container my-5">
+    <h1>Judging Resources</h1>
+    <%-include("components/resources_accordion", {id: "judge", category: "Judging Resources", resources: global.teamresources.fll})%>
+</div>
