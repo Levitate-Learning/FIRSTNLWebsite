@@ -1,0 +1,968 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Robotics Newfoundland & Labrador</title>
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/2025_season.css"/>
+        <link rel="stylesheet" href="/css/2026_season.css"/>
+        <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <a class="navbar-brand" href="/">
+        <img src="/img/og/logo/firstnl_logo.svg" alt="FIRST Newfoundland & Labrador Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+            <!--<li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle href="#" id="navbarDropdownAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                    <a class="dropdown-item" href="/aboutus">About Us</a>
+                    <a class="dropdown-item" href="/aboutus/first">About <span class="cw">FIRST</span></a>
+                </div>
+            </li>-->
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/aboutus.html">About Us</a>
+            </li>
+            <!--<li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/ourhistory">Our History</a>
+            </li>-->
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/volunteer.html">Volunteer</a>
+            </li>
+            <li class="nav-item mx-3 my-2 dropdown d-none">
+                <a class="nav-link dropdown-toggle" href="/events.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">2025 NL FIRST CHAMPIONSHIPS</a></li>
+                    <li><a class="dropdown-item" href="">Community Events</a></li>
+                </ul>
+            </li>
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/sponsor.html">Sponsor</a>
+            </li>
+
+            <!--
+            <a class="nav-item bg-fll-red mx-3 my-2 px-4 rounded nav-link text-white fw-bold" href="/fll.html">
+                FLL
+            </a>
+            -->
+            <li class="nav-item dropdown mx-3 my-2 px-4 bg-fll-red rounded fw-bold">
+                <a class="nav-link dropdown-toggle text-white" href='/fll.html' id="navbarFLL" role="button" data-bs-toggle="dropdown" aria-expanded="false">FLL</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarFLL">
+                    <li><a class="dropdown-item" href="/fll.html">About</a></li>
+                    <li><a class="dropdown-item" href="https://www.firstinspires.org/resource-library/fll/challenge/challenge-and-resources">2026-2027 BIOGLOW</a></li>
+                    <li><a class="dropdown-item" href="/fll/teamresources.html">Team Resources</a></li>
+                    <li><a class="dropdown-item" href="/fll/faq.html">FAQ</a></li>
+                </ul>
+            </li>
+
+            <!--
+            <a class="nav-item bg-ftc-orange mx-3 my-2 px-3 rounded nav-link text-white fw-bold" href="/ftc.html">
+                FTC
+            </a>
+            -->
+            <li class="nav-item dropdown mx-3 my-2 px-4 bg-ftc-orange rounded fw-bold">
+                <a class="nav-link dropdown-toggle text-white" href='/ftc.html' id="navbarFLL" role="button" data-bs-toggle="dropdown" aria-expanded="false">FTC</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarFLL">
+                    <li><a class="dropdown-item" href="/ftc.html">About</a></li>
+                    <li><a class="dropdown-item" href="https://ftc-resources.firstinspires.org/ftc/game">Season Materials</a></li>
+                    <li><a class="dropdown-item" href="/ftc/robot.html">Robot Resources</a></li>
+                    <li><a class="dropdown-item" href="/ftc/coding.html">Coding Resources</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="d-flex justify-content-lg-end justify-content-center flex-grow-1 my-3 px-1">
+            <div class="nav-item mx-3 my-2 px-4 py-1 rounded">
+                <a class="nav-link" href="https://my.firstinspires.org/Dashboard/" target="_blank">FIRST Dashboard</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-center my-3 px-1">
+            <div class="nav-item bg-fll-blue mx-3 my-2 px-4 py-1 rounded">
+                <a class="nav-link text-white fw-bold" href="https://www.zeffy.com/en-CA/donation-form/donate-to-first-robotics-newfoundland-and-labrador" target="_blank">Donate</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-center my-3 px-2">
+            <a class="h3 my-0 mx-2" target="_blank" href="https://www.instagram.com/firstroboticsnl"><i class="bi bi-instagram"></i></a>
+            <a class="h3 my-0 mx-2" target="_blank" href="https://www.tiktok.com/@firstroboticsnl"><i class="bi bi-tiktok"></i></a>
+        </div>
+    </div>
+</nav>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-fll-red px-3 py-2 py-lg-0">
+    <div class="navbar-brand">
+        <h2 class="ms-1 my-0 fw-bold text-white">FIRST LEGO LEAGUE</h2>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFLL" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarFLL">
+        <ul class="navbar-nav">
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="/fll.html">About</a>
+            </li>
+            <!--<li class="nav-item mx-2">
+                <a class="nav-link text-white" href="/fll/startateam.html">Start a Team</a>
+            </li>-->
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="https://www.firstinspires.org/resource-library/fll/challenge/challenge-and-resources">2026-2027 BIOGLOW</a>
+            </li>
+            <!--
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="/fll/innovation.html">Innovation Resources</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="/fll/coding.html">Coding Resources</a>
+            </li>
+            -->
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="/fll/teamresources.html">Team Resources</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="/fll/faq.html">FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Archive
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/fll/archive/2024.html">2024-2025 SUBMERGED</a></li>
+                    <li class="d-none"><a class="dropdown-item" href="/fll/archive/2023.html">2023-2024 MASTERPIECE</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="position-relative" style="height: 300px">
+    <div class=" h-100 container-fluid px-0 position-relative">
+    <img class="w-100 h-100 position-absolute" style="object-fit: cover;" 
+      src = "/img/og/fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg" srcset = "/img/xs/fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg 50w, /img/sm/fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg 200w, /img/md/fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg 500w, /img/lg/fllchallenge/2026/55164336564_e5bbdd3f78_k.jpg 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+    />
+    <div class="bg-overlay position-absolute top-0 left-0 w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="text-white text-center">
+            <h1 class="fw-bold">FIRST LEGO League Challenge</h1>
+            <h2 class="fw-bold">Ages 9 to 14</h2>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Team Resources</h1>
+</div>
+
+<div class="container my-5">
+    <h1>Coaches Corner</h1>
+    <div class="accordion accordion-flush" id="accordionFlushcoach">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecoach0" aria-expanded="false" aria-controls="flush-collapseCoaches Corner0">
+                    📄 Team Swag Ordering Information
+                    <span class='badge text-bg-primary'>Coming Soon</span>
+                </button>
+            </h2>
+            <div id="flush-collapsecoach0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushcoach">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Coming Soon</p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecoach1" aria-expanded="false" aria-controls="flush-collapseCoaches Corner1">
+                    ‼️ Youth Registration Instructions
+                    
+                </button>
+            </h2>
+            <div id="flush-collapsecoach1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushcoach">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">The following links are the instructions for youth registration. All participants are required to register through the FIRST dashboard.
+  - Lead coaches only invite youth members that are 18 years old or older and can legally sign their consent form.
+  - For youth members that are 17 years old and under, the lead coaches must send the Express Enrollment invitation/QR code directly to the parents/guardians to complete.
+
+There are 3 Links.
+  - Youth registration instructions as a coach
+  - Youth registration instructions for parents
+  - Main FIRST page for youth registration.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://help.firstinspires.org/s/article/As-a-lead-coach-mentor-how-do-I-invite-youth-members-via-Express-Enrollment?language=en_US" target="_blank">https://help.firstinspires.org/s/article/As-a-lead-coach-mentor-how-do-I-invite-youth-members-via-Express-Enrollment?language=en_US</a></li>
+                            
+                                <li><a href="https://help.firstinspires.org/s/article/How-do-I-register-my-youth-with-Express-Enrollment?language=en_US" target="_blank">https://help.firstinspires.org/s/article/How-do-I-register-my-youth-with-Express-Enrollment?language=en_US</a></li>
+                            
+                                <li><a href="https://www.firstinspires.org/programs/youth-registration" target="_blank">https://www.firstinspires.org/programs/youth-registration</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecoach2" aria-expanded="false" aria-controls="flush-collapseCoaches Corner2">
+                    🎞️ Coaches Meeting #1 Recording
+                    
+                </button>
+            </h2>
+            <div id="flush-collapsecoach2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushcoach">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;"></p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=eskEYoTzDH8" target="_blank">https://www.youtube.com/watch?v=eskEYoTzDH8</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecoach3" aria-expanded="false" aria-controls="flush-collapseCoaches Corner3">
+                    ‼️ Background Screening Instructions
+                    
+                </button>
+            </h2>
+            <div id="flush-collapsecoach3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushcoach">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">All coaches are required to complete the Youth Protection Program background screening. In Canada, this is done by Sterling Background checks. Attached here is  a PDF provided by FIRST with information about the background check process.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.sterlingcheck.com/assets/econsent/candidate-user-guide-en.pdf" target="_blank">https://www.sterlingcheck.com/assets/econsent/candidate-user-guide-en.pdf</a></li>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=HUVlYxYfw_k" target="_blank">https://www.youtube.com/watch?v=HUVlYxYfw_k</a></li>
+                            
+                                <li><a href="https://www.firstinspires.org/hubfs/web/about/policy/ypp-faq.pdf?hsLang=en" target="_blank">https://www.firstinspires.org/hubfs/web/about/policy/ypp-faq.pdf?hsLang=en</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Important Season Information</h1>
+    <div class="accordion accordion-flush" id="accordionFlushseason">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseason0" aria-expanded="false" aria-controls="flush-collapseImportant Season Information0">
+                    📅 Season Timeline
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseseason0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushseason">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Below are important dates to look out for.
+
+September
+September 10th - Coaches Meeting #1
+3:30pm - Google Meet
+
+October
+October 23rd - Team Swag Order Deadline
+October 31st - Registration Deadline
+
+November
+November 12th - Coaches Meeting #2
+November 13th - Youth Registration Deadline &amp; Dietary Restrictions Due
+
+December 4th (evening) - December 5th
+Provincial Championship</p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseason1" aria-expanded="false" aria-controls="flush-collapseImportant Season Information1">
+                    📄 Team Meeting Guide
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseseason1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushseason">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">This is a helpful guide created by FIRST on how to prepare for a FIRST Lego League competition. It divides the work of preparing for the competition into 12 sessions. If this is your first time being a coach for FIRST Lego League, we highly recommend checking out this guide.</p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseason2" aria-expanded="false" aria-controls="flush-collapseImportant Season Information2">
+                    📄 Robot Game Rulebook
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseseason2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushseason">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">This document outlines all the rules of the robot game. Please review this docuemnt as a team before attending the provincial championship.</p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseason3" aria-expanded="false" aria-controls="flush-collapseImportant Season Information3">
+                    📄 Engineering Notebooks
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseseason3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushseason">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">The Engineering Notebook accompanies the Team Meeting Guide. This is a notebook for the students to fill out as they prepare for the provincial championships.</p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseason4" aria-expanded="false" aria-controls="flush-collapseImportant Season Information4">
+                    🎞️ Robot Game Video (9 mins)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseseason4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushseason">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">This video goes over the BIOGLOW missions and robot game rules.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://youtu.be/uhZZ8O1StiQ?si=b5TQs1EH9A5z8Vq3" target="_blank">https://youtu.be/uhZZ8O1StiQ?si=b5TQs1EH9A5z8Vq3</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Event Information</h1>
+    <div class="accordion accordion-flush" id="accordionFlushevent">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseevent0" aria-expanded="false" aria-controls="flush-collapseEvent Information0">
+                    📄 Judging Rubric
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseevent0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushevent">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">These are the rubrics that our judges use in the judging session. Use these as reference when creating your innovation project and robot design presentation.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-rubrics-color.pdf" target="_blank">https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-rubrics-color.pdf</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseevent1" aria-expanded="false" aria-controls="flush-collapseEvent Information1">
+                    📄 Judging Session Flowchart
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseevent1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushevent">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">At the provincial championship competition, your team will do a judging session where your team will present their Innovation Project and Robot Design presentations. This one page PDF outlines the overview of that session.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-judging-session-flowchart.pdf" target="_blank">https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-judging-session-flowchart.pdf</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseevent2" aria-expanded="false" aria-controls="flush-collapseEvent Information2">
+                    📄 Event Map
+                    <span class='badge text-bg-primary'>Coming Soon</span>
+                </button>
+            </h2>
+            <div id="flush-collapseevent2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushevent">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;"></p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseevent3" aria-expanded="false" aria-controls="flush-collapseEvent Information3">
+                    📄 Event Schedule
+                    <span class='badge text-bg-primary'>Coming Soon</span>
+                </button>
+            </h2>
+            <div id="flush-collapseevent3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushevent">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;"></p>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Building/Programming Resources</h1>
+    <div class="accordion accordion-flush" id="accordionFlushrobot">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot0" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources0">
+                    🔗 Robot Building Tutorials
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">There are many &#34;Starter Builds&#34; on the internet for teams to use to get of the ground in FIRST LEGO League. This website has many build ideas from previous FIRST LEGO League teams. These won&#39;t provide you with the &#34;winning&#34; robot, but is a great place to start!</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://flltutorials.com/en/RobotGame.html?authuser=0" target="_blank">https://flltutorials.com/en/RobotGame.html?authuser=0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot1" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources1">
+                    🎞️ Touch Sensor Tutorial (7 Minutes)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Learn about the touch/force sensor included in your team&#39;s SPIKE Prime kit.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=eZVxWAt8Ap8&amp;authuser=0" target="_blank">https://www.youtube.com/watch?v=eZVxWAt8Ap8&amp;authuser=0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot2" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources2">
+                    🎞️ Distance Sensor Tutorial (7 Minutes)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Learn about the distance sensor included in your team&#39;s SPIKE Prime kit.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=JaIguOYxd3M&amp;authuser=0" target="_blank">https://www.youtube.com/watch?v=JaIguOYxd3M&amp;authuser=0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot3" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources3">
+                    🎞️ Color Sensors Tutorial (6 minutes)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Learn about the color sensor in your team&#39;s SPIKE Prime Kit and how to use it.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=OlesfRqswUI&amp;authuser=0" target="_blank">https://www.youtube.com/watch?v=OlesfRqswUI&amp;authuser=0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot4" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources4">
+                    🎞️ How To Win FIRST LEGO League (8 minutes)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">A video by Creator Academy Australia about the various aspects of the competition. There are tips and tricks for how to find success in FIRST Lego League.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://youtu.be/jNmPUXviKEw?si=QMnjPrgk1jUgRKt-" target="_blank">https://youtu.be/jNmPUXviKEw?si=QMnjPrgk1jUgRKt-</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot5" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources5">
+                    🔗 Getting started with LEGO® Education SPIKE™ Prime (9 minutes)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">A small online course introducing the LEGO Spike kits.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://education.lego.com/en-us/start/spike-prime/#Introduction" target="_blank">https://education.lego.com/en-us/start/spike-prime/#Introduction</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot6" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources6">
+                    🔗 FIRST Lego League Competition Ready Unit
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">A guided unit in the LEGO Spike app showing how to make a competition ready robot. There are multiple chapters in this unit and each chapter has a lesson plan for you to use:
+
+1: Driving Around 
+Controlling movements with the gyro sensor.
+
+2: Playing With Objects
+Controlling movements using the distance sensor
+
+3: Reacting to Lines
+Controlling movements using the color sensor
+
+4: The Guided Mission
+An example solution for one of the robot game missions
+
+5: Assembling an Advanced Driving Base
+Starter bot build guide.
+
+6: My Code, Our Program
+Guide for writing easy to understand code
+
+7: Time for an Upgrade
+Tutorial on making tools for your robot.
+
+8: Mission Ready
+Final Chapter to help you get started preparing for the competition.
+</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://spike.legoeducation.com/prime/unit-plans/blt4b49bd6ee0bde119" target="_blank">https://spike.legoeducation.com/prime/unit-plans/blt4b49bd6ee0bde119</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot7" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources7">
+                    🎞️ Robot Design Techniques
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">A short video showing off some styles of FIRST Lego League robot designs</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=dqmsL9TYaCo" target="_blank">https://www.youtube.com/watch?v=dqmsL9TYaCo</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobot8" aria-expanded="false" aria-controls="flush-collapseRobot Building/Programming Resources8">
+                    📄 Wireframe &amp; Path Diagram
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobot8" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobot">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Here is a wireframe guide to the FIRST Lego League mat provided by FIRST.
+
+You can use this to plan your programs for the 2.5 minute robot game.
+
+Can you determine how far your robot moves in one rotation of the driving wheels? With that knowledge you can use this wireframe guide to determine how many rotations you need to reach a mission!</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt8539702b3b8a719c/6a6afa65b919e2a8b5746c4e/fll-challenge-bioglow-wireframe-grid.pdf?locale=en-us" target="_blank">https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt8539702b3b8a719c/6a6afa65b919e2a8b5746c4e/fll-challenge-bioglow-wireframe-grid.pdf?locale=en-us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Innovation Project Resources</h1>
+    <div class="accordion accordion-flush" id="accordionFlushinno">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseinno0" aria-expanded="false" aria-controls="flush-collapseInnovation Project Resources0">
+                    🎞️ Videos of Innovation Project Presentations
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseinno0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushinno">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Here is a collection of Innovation Project presentation videos from around the world that we found online. Use these as inspiration for your innovation projects. You&#39;ll notice that every team has their own way of presenting their project. How you chose to present your project is up to your team and their creativity. 
+
+List of Videos:
+
+First LEGO League Best Presentation - West Linton Wasps
+Team: West Linton Wasps
+Season: 2015-2016 - Trash Trek
+
+First Lego League Innovation Project Presentation Submerged Season
+Team: LOAD Robotics
+Season: 2023-2024 - Submerged
+
+FLL Innovation Project Presentation Example
+Team: Robotic Rebels
+Season: 2018-2019 - Into Orbit
+
+Our final presentation for our Innovation Project before The World Championship
+Team: Artificial Intelligence
+Season 2021-2022 Cargo Connect</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=zi7LRI4IBJU&amp;authuser=0" target="_blank">https://www.youtube.com/watch?v=zi7LRI4IBJU&amp;authuser=0</a></li>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=j9a4GBtQWTM&amp;authuser=0" target="_blank">https://www.youtube.com/watch?v=j9a4GBtQWTM&amp;authuser=0</a></li>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=awVTLOSyI0o&amp;authuser=0" target="_blank">https://www.youtube.com/watch?v=awVTLOSyI0o&amp;authuser=0</a></li>
+                            
+                                <li><a href="https://youtu.be/_rqseMdx28Q?si=ujqYkV8xETXuq8o7" target="_blank">https://youtu.be/_rqseMdx28Q?si=ujqYkV8xETXuq8o7</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseinno1" aria-expanded="false" aria-controls="flush-collapseInnovation Project Resources1">
+                    📄 Taking Your Innovation Project to the Next Level
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseinno1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushinno">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">This is a presentation/guide from a global FIRST Lego League team, The Lego Legions. This guide is all about how to prepare your innovation project.
+
+In these slides, they talk about how you should design your presentation around the judging session rubric, prioritize reaching out to experts, and more. This is a great resource for learning how to structure your innovation project presentation.
+
+This presentation came from the site flltutorials.com</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://drive.google.com/file/d/1st9u8vFf4KrWeEMCGSoXKp07G7INLGJx/view?usp=classroom_web&amp;authuser=0" target="_blank">https://drive.google.com/file/d/1st9u8vFf4KrWeEMCGSoXKp07G7INLGJx/view?usp=classroom_web&amp;authuser=0</a></li>
+                            
+                                <li><a href="https://drive.google.com/file/d/1ztpQKGysuCzojT_hJp9GgTHbMm6lSE26/view?usp=classroom_web&amp;authuser=0" target="_blank">https://drive.google.com/file/d/1ztpQKGysuCzojT_hJp9GgTHbMm6lSE26/view?usp=classroom_web&amp;authuser=0</a></li>
+                            
+                                <li><a href="https://flltutorials.com/en/Project.html?authuser=0" target="_blank">https://flltutorials.com/en/Project.html?authuser=0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseinno2" aria-expanded="false" aria-controls="flush-collapseInnovation Project Resources2">
+                    🎞️ Essential Google Search Tricks for Research ( 6 minutes)
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseinno2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushinno">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">A video by Common Sense Media going over how to effectively use google for searching the internet. The video goes over search operators for advanced searching.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://youtu.be/s9XZk9CLxK4?si=1tmuZK8tr4mkCy-f" target="_blank">https://youtu.be/s9XZk9CLxK4?si=1tmuZK8tr4mkCy-f</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseinno3" aria-expanded="false" aria-controls="flush-collapseInnovation Project Resources3">
+                    🎞️ FIRST LEGO League Project How-to
+                    
+                </button>
+            </h2>
+            <div id="flush-collapseinno3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushinno">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Three part video series from FIRST Lego League about how to prepare and present your innovation project
+
+Part 1: What is the Project (4 minutes)
+Part 2: How to Have a Successful Project Experience (5 minutes)
+Part 3: Present Your Project ( 4 minutes)</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://youtu.be/pUG5HwAd32c?si=yPoKSC7brxGPKxto" target="_blank">https://youtu.be/pUG5HwAd32c?si=yPoKSC7brxGPKxto</a></li>
+                            
+                                <li><a href="https://youtu.be/U0GRalUUt00?si=jA54jI3gXiBh3eHJ" target="_blank">https://youtu.be/U0GRalUUt00?si=jA54jI3gXiBh3eHJ</a></li>
+                            
+                                <li><a href="https://youtu.be/hHV8d9sCthA?si=uJuLVzF7JWuecOOB" target="_blank">https://youtu.be/hHV8d9sCthA?si=uJuLVzF7JWuecOOB</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Design Presentation Resources</h1>
+    <div class="accordion accordion-flush" id="accordionFlushrobodesign">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapserobodesign0" aria-expanded="false" aria-controls="flush-collapseRobot Design Presentation Resources0">
+                    🎞️ Videos of Robot Design Presentations
+                    
+                </button>
+            </h2>
+            <div id="flush-collapserobodesign0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushrobodesign">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Here is a collection of Robot Design presentation videos from around the world that we found online. Use these as inspiration for your presentation. Note that some of the videos are quiet so we recommend watching with captions turned on. 
+
+Knots and Bots - Robot Design Presentation
+Team: Knots &amp; Bots
+Season: 2023-2024 Masterpiece
+
+FLL SuperPowered Judging Session Presentation
+Team: Lazer Robotics
+Season: 2022-2023 Superpowered
+
+Agileblast FLL 2024 Robot Design Presentation
+Team: Agileblast
+Season: 2024-2025 Submerged</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://youtu.be/8EngByh2ZbI?si=oEtkaEUeeihlIFCv" target="_blank">https://youtu.be/8EngByh2ZbI?si=oEtkaEUeeihlIFCv</a></li>
+                            
+                                <li><a href="https://youtu.be/SoNEq_VabGo?si=SHF-5UcLF3HR_kA4" target="_blank">https://youtu.be/SoNEq_VabGo?si=SHF-5UcLF3HR_kA4</a></li>
+                            
+                                <li><a href="https://www.youtube.com/watch?v=wPjoj15TJ0g" target="_blank">https://www.youtube.com/watch?v=wPjoj15TJ0g</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+<div class="container my-5">
+    <h1>Judging Resources</h1>
+    <div class="accordion accordion-flush" id="accordionFlushjudge">
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsejudge0" aria-expanded="false" aria-controls="flush-collapseJudging Resources0">
+                    🔗 Expanding Students&#39; Ideas About How to Give Presentations
+                    
+                </button>
+            </h2>
+            <div id="flush-collapsejudge0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushjudge">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">This article is a recommended reading from FIRST LEGO League.</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://www.edutopia.org/article/expanding-students-ideas-about-how-give-presentations?authuser=0" target="_blank">https://www.edutopia.org/article/expanding-students-ideas-about-how-give-presentations?authuser=0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsejudge1" aria-expanded="false" aria-controls="flush-collapseJudging Resources1">
+                    🎞️ Schooled by Kids: Presentation Skills
+                    
+                </button>
+            </h2>
+            <div id="flush-collapsejudge1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushjudge">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;">Here are two videos by Green Ivy Schools about presentation skills for kids. It is split into two parts:
+
+Part 1 (2 minutes) 
+Part 2 (2 minutes)</p>
+                    <div>
+                        <ul>
+                            
+                                <li><a href="https://youtu.be/8IbheB2-ixM?si=0gaHlEHBnDGLjDQs" target="_blank">https://youtu.be/8IbheB2-ixM?si=0gaHlEHBnDGLjDQs</a></li>
+                            
+                                <li><a href="https://youtu.be/PX_DAFXQxpc?si=vP_ut8vyXR2YN2Z0" target="_blank">https://youtu.be/PX_DAFXQxpc?si=vP_ut8vyXR2YN2Z0</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+        </div>
+        <div>
+            <div class="container-fluid bg-fll-black py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <ul>
+                    <li><a class="text-white" href="https://www.firstinspires.org/about">About FIRST Global</a></li>
+                    <li><a class="text-white" href="https://my.firstinspires.org/Dashboard/">FIRST Dashboard</a></li>
+                    <li><a class="text-white" href="https://www.firstinspires.org/about/code-of-conduct">Code of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <ul>
+                    <li><a class="text-white" href="/fll.html">FIRST LEGO League Challenge</a></li>
+                    <li><a class="text-white" href="/ftc.html">FIRST Tech Challenge</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3">
+                
+            </div>
+            <div class="col-12 col-md-3">
+                <img style="width: 80%;" 
+      src = "/img/og/logo/FIRST_HorzRGB_reverse.png" srcset = "/img/xs/logo/FIRST_HorzRGB_reverse.png 50w, /img/sm/logo/FIRST_HorzRGB_reverse.png 200w, /img/md/logo/FIRST_HorzRGB_reverse.png 500w, /img/lg/logo/FIRST_HorzRGB_reverse.png 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+    >
+                <p class=" mt-1 text-white fst-italic">For Inspiration And Recognition of Science and Technology</p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </body>
+</html>
