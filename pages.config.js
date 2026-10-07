@@ -23,6 +23,7 @@ global.FILE = function(url){
 
 global.teamresources = {};
 global.teamresources.fll = teamresource.loadCSV("csv/fll.csv");
+global.teamresources.ftc = teamresource.loadCSV("csv/ftc.csv");
 
 
 module.exports = [
@@ -38,8 +39,9 @@ module.exports = [
     {template: "base.ejs", output: "fll/archive/2023.html", data: {page: "fll/archive/masterpiece"}},
     {template: "base.ejs", output: "ftc.html", data: {page: "ftc/ftc"}},
     {template: "base.ejs", output: "ftc/startateam.html", data: {page: "ftc/start_a_team"}},
-    {template: "base.ejs", output: "ftc/robot.html", data: {page: "ftc/robot_resources"}},
-    {template: "base.ejs", output: "ftc/coding.html", data: {page: "ftc/programming_resources"}},
+    //{template: "base.ejs", output: "ftc/robot.html", data: {page: "ftc/robot_resources"}},
+    //{template: "base.ejs", output: "ftc/coding.html", data: {page: "ftc/programming_resources"}},
+    {template: "base.ejs", output: "ftc/teamresources.html", data: {page: "ftc/team_resources"}},
     {template: "base.ejs", output: "sponsor.html", data: {page: "sponsor"}},
     {template: "base.ejs", output: "volunteer.html", data: {page: "volunteer"}},
     {template: "base.ejs", output: "events/championship.html", data: {page: "events/provincial_championship"}}

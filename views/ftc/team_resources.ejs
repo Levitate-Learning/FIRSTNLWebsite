@@ -1,0 +1,49 @@
+<%-include("ftc_nav.ejs")%>
+
+<div class="position-relative" style="height: 300px">
+    <%-include("../components/image_banner", {image: "ftc/IMG_3190.jpg", title: "FIRST Tech Challenge", subtitle: "Ages 14 to 18"})%>
+</div>
+
+<div class="container my-5">
+    <h1>Team Resources</h1>
+</div>
+
+<div class="container my-5">
+    <h1>Coaches Corner</h1>
+    <%-include("components/resources_accordion", {id: "coach", category: "Coaches Corner", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Important Season Information</h1>
+    <%-include("components/resources_accordion", {id: "season", category: "Important Season Information", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Event Information</h1>
+    <%-include("components/resources_accordion", {id: "event", category: "Event Information", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Game Resources</h1>
+    <%-include("components/resources_accordion", {id: "robogame", category: "Robot Game Resources", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Robot Resources</h1>
+    <%-include("components/resources_accordion", {id: "robot", category: "Robot Resources", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Programming Resources</h1>
+    <%-include("components/resources_accordion", {id: "code", category: "Programming Resources", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Judging Resources</h1>
+    <%-include("components/resources_accordion", {id: "judge", category: "Judging Resources", resources: global.teamresources.ftc})%>
+</div>
+
+<div class="container my-5">
+    <h1>Engineering Portfolio Resources</h1>
+    <%-include("components/resources_accordion", {id: "portfolio", category: "Engineering Portfolio Resources", resources: global.teamresources.ftc})%>
+</div>

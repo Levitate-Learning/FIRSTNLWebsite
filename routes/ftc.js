@@ -18,4 +18,8 @@ router.get("/coding", (req, res) => {
     util.renderPage(res, "ftc/programming_resources")
 });
 
+router.get("/teamresources", (req, res) => {
+    util.renderPage(res, "ftc/team_resources")
+});
+
 module.exports = router;

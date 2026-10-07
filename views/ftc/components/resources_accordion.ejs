@@ -1,0 +1,24 @@
+<div class="accordion accordion-flush" id="accordionFlush<%=id%>">
+    <%resources.filter((res) => res.Category == category).forEach((resource, i) => { %>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<%=id%><%=i%>" aria-expanded="false" aria-controls="flush-collapse<%=category%><%=i%>">
+                    <%=resource.Emoji%> <%=resource.Title%>
+                    <%-resource.Status == "Coming Soon" ? "<span class='badge text-bg-primary'>Coming Soon</span>" : "" %>
+                </button>
+            </h2>
+            <div id="flush-collapse<%=id%><%=i%>" class="accordion-collapse collapse" data-bs-parent="#accordionFlush<%=id%>">
+                <div class="accordion-body">
+                    <p style="white-space: pre-line;"><%=resource.Description%></p>
+                    <div>
+                        <ul>
+                            <%resource.Links.forEach((link) => {%>
+                                <li><a href="<%=link%>" target="_blank"><%=link%></a></li>
+                            <%})%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <%});%>
+</div>

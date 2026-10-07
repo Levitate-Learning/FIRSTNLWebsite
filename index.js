@@ -26,6 +26,7 @@ global.FILE = function(url){
 
 global.teamresources = {};
 global.teamresources.fll = teamresource.loadCSV("csv/fll.csv");
+global.teamresources.ftc = teamresource.loadCSV("csv/ftc.csv");
 
 
 app.use(express.static('public'));
