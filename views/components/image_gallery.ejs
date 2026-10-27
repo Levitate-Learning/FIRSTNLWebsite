@@ -15,8 +15,8 @@
                 <a href="<%-FILE('img/og/' + page.image)%>"
                     data-at-400="<%-FILE('img/sm/' + page.image)%>"
                     data-at-800="<%-FILE('img/md/' + page.image)%>"
-                    data-at-1500="<%-FILE('img/lg/' + page.image)%>">
-                    <img class="w-100" src="<%-FILE('img/sm/' + page.image)%>"/>
+                    data-at-1500="<%-FILE('img/og/' + page.image)%>">
+                    <div class="w-100 bg-image" style="height:150px; background-image: url('<%-FILE('img/sm/' + page.image)%>');"></div>
                 </a>
             </div>
         <%})%>
