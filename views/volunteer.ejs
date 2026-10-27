@@ -7,8 +7,9 @@
             <p>FIRST is more than just a competition, it's a community! FIRST competitions and events are not possible without the amazing help from our volunteers. 
                 You can help us inspire students through innovation, inclusion, team work, and fun! From a few hours to events all year long, every role helps students 
                 grow, learn, and thrive.</p>
-            <p class="color-fll-red fst-italic">Volunteer signup has not opened for the 2026 Provincial Championship yet.</p>
-            <button class="btn bg-first-blue fw-bold text-white my-4" disabled>Sign Up</button>
+            <button type="button" class="btn bg-first-blue fw-bold text-white my-4" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                Sign Up
+            </button>
             <a class="btn bg-first-blue fw-bold text-white my-4" href="mailto:first@levitatelearning.ca">Contact Us</a>
             <a class="btn bg-first-blue fw-bold text-white my-4" href="#roles">Explore Volunteer Roles</a>
             
@@ -30,7 +31,7 @@
             <h1 class="fw-bold">Confidently Inspire the Next Generation</h1>
             <p>We want all FIRST volunteers to feel confident in their roles. From judging to safety goggles and registration to field resets. 
                 We offer a variety of guidebooks and interactive training modules to help volunteers feel prepared for any role. </p>
-            <button class="btn bg-first-blue text-white fw-bold" disabled>Volunteer Handbook</button>
+            <a class="btn bg-first-blue text-white fw-bold" target="_blank" href="https://firstinspires.blob.core.windows.net/volunteer/volunteer-handbook.pdf">Volunteer Handbook</a>
         </div>
     </div>
 </div>
@@ -60,6 +61,14 @@
     <div class="row position-relative">
         <%-include("components/volunteer_card", {
             program: "both", 
+            title: "Assign Me As Needed", 
+            text: "Unsure what role you may play? Happy to help out in any role? Choose this role and we will assign you where you are needed most!",
+            meet: false,
+            field: false,
+            event: false}) %>
+        
+        <%-include("components/volunteer_card", {
+            program: "both", 
             title: "Judge", 
             text: "As a judge, you'll play a key role in recognizing and celebrating team achievements by engaging directly with students through interviews and presentations. offering encouragement and constructive feedback along the way.",
             meet: true,
@@ -69,7 +78,7 @@
         <%-include("components/volunteer_card", {
             program: "both", 
             title: "Referee", 
-            text: "Referees observe matches and help foster fair gameplay. They identify and ‘call’ rule violations and assist competitors in understanding the rules of the game. This position requires additional training and intimate knowledge of game rules.",
+            text: "Want to be a part of the action on the field? Referees observe robot game matches, track the status of each match, and assist competitors in understanding the rules of the game.",
             meet: true,
             field: true,
             event: false}) %>
@@ -85,23 +94,23 @@
         <%-include("components/volunteer_card", {
             program: "ftc", 
             title: "Robot Inspector", 
-            text: "Robot Inspectors perform mandatory pre-match inspections and provide teams with guidance to ensure compliance with current season robot rules. They work under the supervision of the Lead Robot Inspector and use official checklists to determine pass/fail status.",
+            text: "Robot Inspectors ensure all robots meet technical and safety rules before competing. This hands-on, team-facing role combines engineering, communication, and rule enforcement to support fair and safe gameplay across the event.",
             meet: true,
             field: false,
             event: false}) %>
 
         <%-include("components/volunteer_card", {
             program: "both", 
-            title: "Pit Admin", 
-            text: "Pit Admin is a central point of contact for teams and guests in the Pit Area. In this role you will help teams understand the schedule, ensure teams know where to go, and direct teams to various competition officials to answer questions and get necessary support.",
+            title: "Pit Runner", 
+            text: "Pit Runners are responsible for ensuring teams receive critical event information and are guided efficiently to the competition area.",
             meet: false,
             field: false,
             event: true}) %>
 
         <%-include("components/volunteer_card", {
             program: "both", 
-            title: "Practice Area Supervisor", 
-            text: "A Practice Field Supervisor plays an important role in helping teams prepare for competition by managing access to the practice field area, ensuring safety, and supporting fair and efficient field use.",
+            title: "Practice Attendant", 
+            text: "A Practice Attendant plays an important role in helping teams prepare for competition by managing access to the practice field area, ensuring safety, and supporting fair and efficient field use.",
             meet: true,
             field: true,
             event: false}) %>
@@ -116,8 +125,8 @@
 
         <%-include("components/volunteer_card", {
             program: "both", 
-            title: "Event Registration", 
-            text: 'Team Registration volunteers help check in teams at the beginning of the event and provide them with information and materials for the day. After the registration period has closed, the “registration desk” turns into the “information desk”.',
+            title: "Team Registration", 
+            text: 'Team Registration volunteers are the welcoming faces of the event, greeting teams, checking rosters, and distributing essential event materials.',
             meet: false,
             field: false,
             event: true}) %>
@@ -125,15 +134,15 @@
         <%-include("components/volunteer_card", {
             program: "both", 
             title: "Scorekeeper", 
-            text: "Scorekeepers operate the scoring software used during the event and are responsible for managing match data, rankings, and results displays. In this role accuracy, focus, and comfort with computers are essential.",
+            text: "Scorekeepers operate the scoring software used during the event and are responsible for managing match data, rankings, and results displays.",
             meet: false,
             field: true,
             event: true}) %>
 
         <%-include("components/volunteer_card", {
             program: "both", 
-            title: "Volunteer Room Supervisor", 
-            text: "The Volunteer Room Assistant assists the Volunteer Coordinator with volunteer check in and monitors the volunteer room. This role is perfect for friendly, detail-oriented individuals who enjoy being part of a team and making others feel appreciated and informed.",
+            title: "Volunteer Room Assistant", 
+            text: "As a Volunteer Room Assistant, you'll help create a warm and organized welcome for fellow volunteers by assisting with check-in, distributing materials, and supporting the Volunteer Coordinator throughout the event.",
             meet: false,
             field: false,
             event: true}) %>
@@ -155,11 +164,67 @@
             event: true}) %>
 
         <%-include("components/volunteer_card", {
-            program: "both", 
+            program: "ftc", 
             title: "Field Resetter", 
             text: "Field Resetters help keep the pace of match play by quickly and safely resetting the field after each match. They are essential to the flow of the event, working closely with the field team to ensure a consistent and safe competition environment.",
             meet: false,
             field: true,
             event: false}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "both", 
+            title: "Queuer", 
+            text: "Stage and position teams in preparation for their matches or judging sessions, ensuring smooth traffic flow and punctuality.",
+            meet: true,
+            field: true,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "cross", 
+            title: "Merch Table Attendant", 
+            text: "Merch Table Attendants assist at the FIRST NL merch table, where custom t-shirts and other merchandise are made and sold. Make t-shirts or manage the sales kiosk.",
+            meet: false,
+            field: false,
+            event: true}) %>
+
+        <%-include("components/volunteer_card", {
+            program: "ftc", 
+            title: "Official Scorer", 
+            text: "Official Scorers are vital to the technical and procedural success of each event, observing matches, counting game pieces, and inputting scoring achievements to ensure safe and fair gameplay.",
+            meet: false,
+            field: false,
+            event: true}) %>
+    
+        
+    </div>
+</div>
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="signUpModalLabel">Sign Up To Volunteer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img class="w-50" <%- IMAGE('first_canopy/first_canopy_logo_rgb_fullcolor.png') %> />
+                <p>
+                    The 2026 <span class="fst-italic">FIRST</span> NL Provincial Championships will take place December 4-6 at the Holiday Inn Conference Centre in St. John's, NL. 
+                    This year, our two competition classes (<span class="fst-italic">FIRST</span> Lego League and FIRST Tech Challenge) will not be hosted simultaneously. Instead, hosted back to back.
+                </p>
+                <p>
+                    If you really love robots, you can absolutely volunteer for the entire event (Friday night to Sunday) by filling out both registrations.
+                </p>
+                <p>Use the links below to sign up as a volunter for FIRST Lego League and/or FIRST Tech Challenge.</p>
+                <a class="btn fw-bold bg-fll-red text-white" target="_blank" href="https://my.firstinspires.org/ExpressVolunteer/landing-page/419d93d8-ba99-11f1-ae7b-00505699b848">FLL (December 4th - December 5th)</a>
+                <a class="btn fw-bold bg-ftc-orange text-white" target="_blank" href="https://my.firstinspires.org/ExpressVolunteer/landing-page/bce947fb-af9c-11f1-82a4-00505699b848">FTC (December 5th - December 6th)</a>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
 </div>
