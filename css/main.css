@@ -166,3 +166,7 @@
 .btn:hover{
     opacity: 80%;
 }
+
+.nav-item{
+    white-space: nowrap;
+}
