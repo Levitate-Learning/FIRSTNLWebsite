@@ -44,5 +44,6 @@ module.exports = [
     {template: "base.ejs", output: "ftc/teamresources.html", data: {page: "ftc/team_resources"}},
     {template: "base.ejs", output: "sponsor.html", data: {page: "sponsor"}},
     {template: "base.ejs", output: "volunteer.html", data: {page: "volunteer"}},
+    {template: "base.ejs", output: "volunteers.html", data: {page: "volunteer"}},
     {template: "base.ejs", output: "events/championship.html", data: {page: "events/provincial_championship"}}
 ]
