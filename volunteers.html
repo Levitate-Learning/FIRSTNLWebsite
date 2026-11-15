@@ -1,0 +1,610 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Robotics Newfoundland & Labrador</title>
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/2025_season.css"/>
+        <link rel="stylesheet" href="/css/2026_season.css"/>
+        <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <a class="navbar-brand" href="/">
+        <img src="/img/og/logo/firstnl_logo.svg" alt="FIRST Newfoundland & Labrador Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+            <!--<li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle href="#" id="navbarDropdownAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                    <a class="dropdown-item" href="/aboutus">About Us</a>
+                    <a class="dropdown-item" href="/aboutus/first">About <span class="cw">FIRST</span></a>
+                </div>
+            </li>-->
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/aboutus.html">About Us</a>
+            </li>
+            <!--<li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/ourhistory">Our History</a>
+            </li>-->
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/volunteer.html">Volunteer</a>
+            </li>
+            <li class="nav-item mx-3 my-2 dropdown d-none">
+                <a class="nav-link dropdown-toggle" href="/events.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">2025 NL FIRST CHAMPIONSHIPS</a></li>
+                    <li><a class="dropdown-item" href="">Community Events</a></li>
+                </ul>
+            </li>
+            <li class="nav-item mx-3 my-2">
+                <a class="nav-link" href="/sponsor.html">Sponsor</a>
+            </li>
+
+            <!--
+            <a class="nav-item bg-fll-red mx-3 my-2 px-4 rounded nav-link text-white fw-bold" href="/fll.html">
+                FLL
+            </a>
+            -->
+            <li class="nav-item dropdown mx-3 my-2 px-4 bg-fll-red rounded fw-bold">
+                <a class="nav-link dropdown-toggle text-white" href='/fll.html' id="navbarFLL" role="button" data-bs-toggle="dropdown" aria-expanded="false">FLL</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarFLL">
+                    <li><a class="dropdown-item" href="/fll.html">About</a></li>
+                    <li><a class="dropdown-item" href="https://www.firstinspires.org/resource-library/fll/challenge/challenge-and-resources">2026-2027 BIOGLOW</a></li>
+                    <li><a class="dropdown-item" href="/fll/teamresources.html">Team Resources</a></li>
+                    <li><a class="dropdown-item" href="/fll/faq.html">FAQ</a></li>
+                </ul>
+            </li>
+
+            <!--
+            <a class="nav-item bg-ftc-orange mx-3 my-2 px-3 rounded nav-link text-white fw-bold" href="/ftc.html">
+                FTC
+            </a>
+            -->
+            <li class="nav-item dropdown mx-3 my-2 px-4 bg-ftc-orange rounded fw-bold">
+                <a class="nav-link dropdown-toggle text-white" href='/ftc.html' id="navbarFLL" role="button" data-bs-toggle="dropdown" aria-expanded="false">FTC</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarFLL">
+                    <li><a class="dropdown-item" href="/ftc.html">About</a></li>
+                    <li><a class="dropdown-item" href="https://ftc-resources.firstinspires.org/ftc/game">Season Materials</a></li>
+                    <li><a class="dropdown-item" href="/ftc/teamresources.html">Team Resources</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="d-flex justify-content-lg-end justify-content-center flex-grow-1 my-3 px-1">
+            <div class="nav-item mx-3 my-2 px-4 py-1 rounded">
+                <a class="nav-link" href="https://my.firstinspires.org/Dashboard/" target="_blank">FIRST Dashboard</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-center my-3 px-1">
+            <div class="nav-item bg-fll-blue mx-3 my-2 px-4 py-1 rounded">
+                <a class="nav-link text-white fw-bold" href="https://www.zeffy.com/en-CA/donation-form/donate-to-first-robotics-newfoundland-and-labrador" target="_blank">Donate</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-center my-3 px-2">
+            <a class="h3 my-0 mx-2" target="_blank" href="https://www.instagram.com/firstroboticsnl"><i class="bi bi-instagram"></i></a>
+            <a class="h3 my-0 mx-2" target="_blank" href="https://www.facebook.com/people/FIRST-Robotics-Newfoundland-and-Labrador/61589990202985/"><i class="bi bi-facebook"></i></a>
+            <a class="h3 my-0 mx-2" target="_blank" href="https://www.linkedin.com/company/first-robotics-newfoundland-and-labrador"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+        </div>
+        <div>
+            <link rel="stylesheet" href="/css/volunteer.css">
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="fw-bold">Help us inspire the next generation of innovators and leaders!</h1>
+            <p>FIRST is more than just a competition, it's a community! FIRST competitions and events are not possible without the amazing help from our volunteers. 
+                You can help us inspire students through innovation, inclusion, team work, and fun! From a few hours to events all year long, every role helps students 
+                grow, learn, and thrive.</p>
+            <button type="button" class="btn bg-first-blue fw-bold text-white my-4" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                Sign Up
+            </button>
+            <a class="btn bg-first-blue fw-bold text-white my-4" href="mailto:first@levitatelearning.ca">Contact Us</a>
+            <a class="btn bg-first-blue fw-bold text-white my-4" href="#roles">Explore Volunteer Roles</a>
+            
+        </div>
+        <div class="col-md-6">
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/qkOphaV17UM?si=UyC3o82Z2mV0JhcK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 text-center  mb-4">
+            <img class="w-80" 
+      src = "/img/og/volunteer/55163195677_5fb1c04e9d_k.jpg" srcset = "/img/xs/volunteer/55163195677_5fb1c04e9d_k.jpg 50w, /img/sm/volunteer/55163195677_5fb1c04e9d_k.jpg 200w, /img/md/volunteer/55163195677_5fb1c04e9d_k.jpg 500w, /img/lg/volunteer/55163195677_5fb1c04e9d_k.jpg 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+    />
+        </div>
+        <div class="col-md-6">
+            <h1 class="fw-bold">Confidently Inspire the Next Generation</h1>
+            <p>We want all FIRST volunteers to feel confident in their roles. From judging to safety goggles and registration to field resets. 
+                We offer a variety of guidebooks and interactive training modules to help volunteers feel prepared for any role. </p>
+            <a class="btn bg-first-blue text-white fw-bold" target="_blank" href="https://firstinspires.blob.core.windows.net/volunteer/volunteer-handbook.pdf">Volunteer Handbook</a>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h1 class="fw-bold">Creating a Safe, Supportive Experience</h1>
+            <p>FIRST is committed to providing a safe, welcoming environment for every student. Through our Youth Protection Program, coaches, mentors, and volunteers are trained to support our robotics programs with high standards of care and respect.</p>
+            <a class="btn bg-first-blue fw-bold text-white" target="_blank" href="https://www.firstinspires.org/programs/youth-protection-program">Learn More</a>
+        </div>
+        <div class="col-md-6 text-center">
+            <img class="w-80" 
+      src = "/img/og/volunteer/DSC2491.jpg" srcset = "/img/xs/volunteer/DSC2491.jpg 50w, /img/sm/volunteer/DSC2491.jpg 200w, /img/md/volunteer/DSC2491.jpg 500w, /img/lg/volunteer/DSC2491.jpg 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+    />
+        </div>
+    </div>
+</div>
+
+<div id="roles" class="container-fluid bg-volutneer-roles position-relative p-0">
+    <div class="bg-overlay position-absolute top-0 left-0 w-100 h-100 z-1"></div>
+    <div class="container text-white fw-bold z-2 position-relative py-5 text-center">
+        <h1 class="my-5">A Role for Everyone</h1>
+        <p class="mb-5">Whether you want to spend your time learning firsthand from our teams, helping plan and organize the event, or want to be right where the action is on the playing field, there is a role for you! Every role is critical to providing life changing experiences for youth in Newfoundland and Labrador. Learn more about the volunteer roles below.</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row position-relative">
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Assign Me As Needed</h3>
+            <p>Unsure what role you may play? Happy to help out in any role? Choose this role and we will assign you where you are needed most!</p>
+
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+        
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Judge</h3>
+            <p>As a judge, you&#39;ll play a key role in recognizing and celebrating team achievements by engaging directly with students through interviews and presentations. offering encouragement and constructive feedback along the way.</p>
+
+            
+                <span class="badge bg-ftc-black">Meet the Teams</span>
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Referee</h3>
+            <p>Want to be a part of the action on the field? Referees observe robot game matches, track the status of each match, and assist competitors in understanding the rules of the game.</p>
+
+            
+                <span class="badge bg-ftc-black">Meet the Teams</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+        </div>
+    </div>
+</div>
+        
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Emcee</h3>
+            <p>Bring the energy and spirit of FIRST to life as an Emcee, the enthusiastic voice that guides the audience through match play and team introductions. If you enjoy public speaking, connecting with teams, and creating a fun, inclusive atmosphere, this high-profile, fast-paced role is a perfect fit!</p>
+
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-ftc-orange fw-bold">FIRST Tech Challenge</p>
+            
+
+            <h3 class="fw-bold">Robot Inspector</h3>
+            <p>Robot Inspectors ensure all robots meet technical and safety rules before competing. This hands-on, team-facing role combines engineering, communication, and rule enforcement to support fair and safe gameplay across the event.</p>
+
+            
+                <span class="badge bg-ftc-black">Meet the Teams</span>
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Pit Runner</h3>
+            <p>Pit Runners are responsible for ensuring teams receive critical event information and are guided efficiently to the competition area.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Practice Attendant</h3>
+            <p>A Practice Attendant plays an important role in helping teams prepare for competition by managing access to the practice field area, ensuring safety, and supporting fair and efficient field use.</p>
+
+            
+                <span class="badge bg-ftc-black">Meet the Teams</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Quiet Room Attendant</h3>
+            <p>The Quiet Room is a place for individuals to step away from the excitement and pressure of a FIRST event to decompress in silence. The Quiet Room Supervisor oversees the Quiet Room and helps to ensure that individuals using the room respect the nature of the space.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Team Registration</h3>
+            <p>Team Registration volunteers are the welcoming faces of the event, greeting teams, checking rosters, and distributing essential event materials.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Scorekeeper</h3>
+            <p>Scorekeepers operate the scoring software used during the event and are responsible for managing match data, rankings, and results displays.</p>
+
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Volunteer Room Assistant</h3>
+            <p>As a Volunteer Room Assistant, you&#39;ll help create a warm and organized welcome for fellow volunteers by assisting with check-in, distributing materials, and supporting the Volunteer Coordinator throughout the event.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Audio/Video Crew</h3>
+            <p>Be part of the action as Audio Visual Crew, where you&#39;ll help capture the excitement of a FIRST event through sound, lighting, video, and livestream support. This hands-on role is perfect for detail-oriented volunteers who enjoy tech, teamwork, and creating engaging experiences for both live and online audiences.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Photographer</h3>
+            <p>The Event Photographer captures the excitement and spirit of FIRST events by photographing teams, robots, volunteers, and key moments. This creative and collaborative role helps tell the story of the event through digital images.</p>
+
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-ftc-orange fw-bold">FIRST Tech Challenge</p>
+            
+
+            <h3 class="fw-bold">Field Resetter</h3>
+            <p>Field Resetters help keep the pace of match play by quickly and safely resetting the field after each match. They are essential to the flow of the event, working closely with the field team to ensure a consistent and safe competition environment.</p>
+
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Queuer</h3>
+            <p>Stage and position teams in preparation for their matches or judging sessions, ensuring smooth traffic flow and punctuality.</p>
+
+            
+                <span class="badge bg-ftc-black">Meet the Teams</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Around the Field</span>
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-first-blue fw-bold">Cross Program</p>
+            
+
+            <h3 class="fw-bold">Merch Table Attendant</h3>
+            <p>Merch Table Attendants assist at the FIRST NL merch table, where custom t-shirts and other merchandise are made and sold. Make t-shirts or manage the sales kiosk.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-6 col-lg-4 my-2">
+    <div class="card h-100">
+        <div class="card-body">
+            
+                <p class="color-ftc-orange fw-bold">FIRST Tech Challenge</p>
+            
+
+            <h3 class="fw-bold">Official Scorer</h3>
+            <p>Official Scorers are vital to the technical and procedural success of each event, observing matches, counting game pieces, and inputting scoring achievements to ensure safe and fair gameplay.</p>
+
+            
+            
+            
+            
+            
+                <span class="badge bg-ftc-black">Event Delivery</span>
+            
+        </div>
+    </div>
+</div>
+    
+        
+    </div>
+</div>
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="signUpModalLabel">Sign Up To Volunteer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img class="w-50" 
+      src = "/img/og/first_canopy/first_canopy_logo_rgb_fullcolor.png" srcset = "/img/xs/first_canopy/first_canopy_logo_rgb_fullcolor.png 50w, /img/sm/first_canopy/first_canopy_logo_rgb_fullcolor.png 200w, /img/md/first_canopy/first_canopy_logo_rgb_fullcolor.png 500w, /img/lg/first_canopy/first_canopy_logo_rgb_fullcolor.png 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+     />
+                <p>
+                    The 2026 <span class="fst-italic">FIRST</span> NL Provincial Championships will take place December 4-6 at the Holiday Inn Conference Centre in St. John's, NL. 
+                    This year, our two competition classes (<span class="fst-italic">FIRST</span> Lego League and FIRST Tech Challenge) will not be hosted simultaneously. Instead, hosted back to back.
+                </p>
+                <p>
+                    If you really love robots, you can absolutely volunteer for the entire event (Friday night to Sunday) by filling out both registrations.
+                </p>
+                <p>Use the links below to sign up as a volunter for FIRST Lego League and/or FIRST Tech Challenge.</p>
+                <a class="btn fw-bold bg-fll-red text-white" target="_blank" href="https://my.firstinspires.org/ExpressVolunteer/landing-page/419d93d8-ba99-11f1-ae7b-00505699b848">FLL (December 4th - December 5th)</a>
+                <a class="btn fw-bold bg-ftc-orange text-white" target="_blank" href="https://my.firstinspires.org/ExpressVolunteer/landing-page/bce947fb-af9c-11f1-82a4-00505699b848">FTC (December 5th - December 6th)</a>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div>
+            <div class="container-fluid bg-fll-black py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <ul>
+                    <li><a class="text-white" href="https://www.firstinspires.org/about">About FIRST Global</a></li>
+                    <li><a class="text-white" href="https://my.firstinspires.org/Dashboard/">FIRST Dashboard</a></li>
+                    <li><a class="text-white" href="https://www.firstinspires.org/about/code-of-conduct">Code of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <ul>
+                    <li><a class="text-white" href="/fll.html">FIRST LEGO League Challenge</a></li>
+                    <li><a class="text-white" href="/ftc.html">FIRST Tech Challenge</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3">
+                
+            </div>
+            <div class="col-12 col-md-3">
+                <img style="width: 80%;" 
+      src = "/img/og/logo/FIRST_HorzRGB_reverse.png" srcset = "/img/xs/logo/FIRST_HorzRGB_reverse.png 50w, /img/sm/logo/FIRST_HorzRGB_reverse.png 200w, /img/md/logo/FIRST_HorzRGB_reverse.png 500w, /img/lg/logo/FIRST_HorzRGB_reverse.png 1000w" sizes="(max-width: 300px) 50px, (max-width: 800px) 200px, (max-width: 1500px) 500px, 1000px"
+    >
+                <p class=" mt-1 text-white fst-italic">For Inspiration And Recognition of Science and Technology</p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </body>
+</html>
